@@ -1,0 +1,320 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Hiragino Kaku Gothic ProN";
+  font-size: 1.2rem;
+  color: rgb(55, 20, 5);
+  overflow: scroll;
+}
+
+.backcolor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(195, 243, 209);
+  text-align: center;
+  z-index: -1;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 4%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#hamburger {
+  display: none;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 5px 10% 5px;
+  background-color: #fdfaf6;
+  position: fixed;
+  border-bottom: solid 0.5px;
+}
+header a {
+  text-align: end;
+}
+header p {
+  font-size: clamp(1.1rem, 0.9rem + 0.625vw, 1.6rem);
+}
+header rt {
+  font-size: 0.7em;
+  font-style: italic;
+}
+header ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1.5rem;
+}
+
+.fa-paw {
+  margin-left: 1px;
+}
+
+#top-wrapper {
+  width: 100%;
+  padding-top: 200px;
+  margin-bottom: 250px;
+}
+#top-wrapper h1 {
+  width: 100%;
+  font-size: clamp(2.4rem, 3rem + 0.625vw, 4rem);
+  text-align: center;
+  font-weight: bold;
+  line-height: 1rem;
+}
+#top-wrapper h1 rt {
+  font-size: 0.6em;
+  padding-bottom: 1.5rem;
+  font-style: italic;
+  position: relative;
+}
+
+#site-titleB {
+  display: none;
+}
+
+.line {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+.line hr {
+  flex: 1;
+  height: 1px;
+  border: 2px dashed;
+}
+.line span {
+  font-size: 1rem;
+}
+
+.line-length {
+  width: 300px;
+}
+
+#top-message {
+  margin-top: 20;
+}
+
+section {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 150px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+#profile-wrapper {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.photo-style {
+  max-width: 350px;
+  margin: 0px 20px;
+  border: 7px solid white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 1s ease;
+}
+.photo-style:hover {
+  transform: rotate(360deg);
+}
+
+#profile-content {
+  text-align: left;
+}
+#profile-content dt {
+  display: inline-block;
+  background-color: #fdfaf6;
+  border: 1px solid #ddd;
+  border-radius: 1em;
+  padding: 0.2em 0.5em;
+  font-weight: bold;
+}
+#profile-content dd {
+  margin: 0.2em 0 0.5rem 1.5rem;
+}
+
+#dog-skills {
+  margin: 60px auto 0;
+  width: 90%;
+  table-layout: auto;
+  border-collapse: separate;
+  border-spacing: 0 12px;
+}
+#dog-skills td {
+  background-color: #fdfaf6;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  vertical-align: top;
+  font-size: clamp(1.1rem, 0.9rem + 0.625vw, 1.6rem);
+}
+#dog-skills td:first-child {
+  font-weight: bold;
+  white-space: nowrap;
+  width: 25%;
+}
+#dog-skills td:nth-child(2) {
+  text-align: left;
+  padding-left: 3rem;
+  width: 75%;
+}
+
+#colections {
+  margin-bottom: 100px;
+}
+
+.gallery {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 200px;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  transition: border-color 0.3s;
+}
+
+.gallery img:hover {
+  border-color: rgb(55, 20, 5);
+}
+
+#preview {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#preview img {
+  max-width: 100%;
+  max-height: 500px;
+  border: 7px solid white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  width: 100%;
+  background-color: #fdfaf6;
+  font-size: 8px;
+  text-align: center;
+  padding: 5px;
+}
+
+@media (max-width: 600px) {
+  header {
+    height: 40px;
+    padding: 0 20px;
+  }
+  #hamburger {
+    margin-left: 40%;
+    display: block;
+    font-size: 40px;
+    text-align: right;
+    cursor: pointer;
+  }
+  #navlinks {
+    display: none;
+    flex-direction: column;
+    background-color: #fdfaf6;
+    border-radius: 5px;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    width: 150px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+  }
+  #navlinks.active {
+    display: flex;
+  }
+  #navlinks li {
+    margin-top: 15px;
+  }
+  #navlinks li:first-child {
+    margin-top: 5px;
+  }
+  #site-titleB {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  #site-titleB p {
+    font-weight: bold;
+  }
+  #site-titleA {
+    display: none;
+  }
+  #profile-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #profile-wrapper img {
+    margin-bottom: 25px;
+  }
+  #profile-wrapper #profile-content {
+    text-align: center;
+  }
+  #profile-wrapper #profile-content dd {
+    margin: 0.2em 0 1.5rem;
+  }
+  #dog-skills {
+    table-layout: fixed;
+    width: 100%;
+  }
+  #dog-skills td:first-child {
+    width: 30%;
+    text-align: center;
+    padding: 5px 0;
+  }
+  #dog-skills td:nth-child(2) {
+    width: 70%;
+    padding: 5px 10px;
+  }
+  #preview {
+    display: none;
+  }
+  .gallery {
+    margin-top: 20px;
+  }
+  .gallery img {
+    margin: 0 auto;
+    width: 90%;
+    height: auto;
+    border: 7px solid white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+  }
+  .gallery img:hover {
+    border-color: white;
+  }
+}/*# sourceMappingURL=stylesheet.css.map */

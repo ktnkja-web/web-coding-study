@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" href="./img/favicon.ico">
+    <title>utinokomemo</title>
+    <meta name="description" content="練習で作成したホームページです">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/stylesheet.css">
+</head>
+
+<body>
+    <div class="backcolor"></div>
+    <header>
+        <a id="title-logo" href="test.html">
+            <p><ruby>うちの犬備忘録<span class="fas fa-paw"></span>
+                    <rt>uchinoko-memo</rt>
+                </ruby></p>
+        </a>
+        <div id="hamburger">
+            ☰
+        </div>
+        <nav>
+            <ul id="navlinks">
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#tricks">Tricks</a></li>
+                <li><a href="#colections">Colections</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="top-wrapper" class="container">
+        <h1 id="site-titleA">
+            <ruby>うちの犬備忘録<span class="fas fa-paw"></span>
+                <rt>uchinoko-memo</rt>
+        </h1></ruby>
+
+        <h1 id="site-titleB">
+            <p>うちの犬</p>
+            <p>備忘録<span class="fas fa-paw"></span></p>
+        </h1>
+        <div class="line">
+            <span>●</span>
+            <hr><span>●</span>
+        </div>
+        <p id="top-message">いつまでも忘れたくない君のこと</p>
+    </div>
+
+
+    <main class="container">
+        <section id="profile">
+            <h2>Profile</h2>
+            <div class="line line-length">
+                <span>●</span>
+                <hr><span>●</span>
+            </div>
+            <div id="profile-wrapper">
+                <img src="./img/profile.jpeg" alt="がじゅまるの写真" class="photo-style">
+                <dl id="profile-content">
+                    <dt>名前</dt>
+                    <dd>がじゅまる</dd>
+                    <dt>犬種</dt>
+                    <dd>柴犬</dd>
+                    <dt>性別</dt>
+                    <dd>オス</dd>
+                    <dt>誕生日</dt>
+                    <dd>2019年11月24日</dd>
+                    <dt>出身地</dt>
+                    <dd>香川県</dd>
+                    <dt>尻尾</dt>
+                    <dd>右巻きの半差尾</dd>
+                    <dt>好きなもの</dt>
+                    <dd>ミルク味とチーズ味のもの、ちゅーる、遊ぶこと</dd>
+                    <dt>嫌いなもの</dt>
+                    <dd>野菜、自分より強そうなヤツ、暗闇</dd>
+                </dl>
+            </div>
+        </section>
+
+        <section id="tricks">
+            <h2>Tricks</h2>
+            <div class="line line-length">
+                <span>●</span>
+                <hr><span>●</span>
+            </div>
+            <table id="dog-skills">
+
+                <tr>
+                    <td>おすわり</td>
+                    <td>基本の技。待機状態。🖐️人差し指を上にスライドさせる。</td>
+                </tr>
+                <tr>
+                    <td>お手</td>
+                    <td>基本の技２。手先は触られたくないので極力したくないみたい。</td>
+                </tr>
+                <tr>
+                    <td>ふせ</td>
+                    <td>おすわりするとセットでしてくれる。🖐️手の平を下に下げる。</td>
+                </tr>
+                <tr>
+                    <td>まる</td>
+                    <td>手で作った輪に顔を突っ込む。飼い主は「可愛い！」しか言えなくなる。</td>
+                </tr>
+                <tr>
+                    <td>ジャンプ<wbr>＆股潜り</td>
+                    <td>ノリで教えたら一瞬で習得した。天才。天使。</td>
+                </tr>
+                <tr>
+                    <td>おいで</td>
+                    <td>対価と駆け引きが必要。少しでも不穏な空気を感じたら来てくれない。</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="colections">
+            <h2>Colections</h2>
+            <div class="line line-length">
+                <span>●</span>
+                <hr><span>●</span>
+            </div>
+            <div id="preview">
+                <img src="./img/gajucole_1.jpeg" alt="プレビュー画像" id="largeImage">
+            </div>
+
+            <div class="gallery">
+                <img src="./img/gajucole_1.jpeg" alt="Photo 1" onclick="showPreview(this)">
+                <img src="./img/gajucole_2.jpeg" alt="Photo 2" onclick="showPreview(this)">
+                <img src="./img/gajucole_3.jpeg" alt="Photo 3" onclick="showPreview(this)">
+                <img src="./img/gajucole_4.jpeg" alt="Photo 4" onclick="showPreview(this)">
+                <img src="./img/gajucole_5.jpeg" alt="Photo 5" onclick="showPreview(this)">
+                <img src="./img/gajucole_6.jpeg" alt="Photo 6" onclick="showPreview(this)">
+                <img src="./img/gajucole_7.jpeg" alt="Photo 7" onclick="showPreview(this)">
+                <img src="./img/gajucole_8.jpeg" alt="Photo 8" onclick="showPreview(this)">
+                <img src="./img/gajucole_9.jpeg" alt="Photo 9" onclick="showPreview(this)">
+                <img src="./img/gajucole_10.jpeg" alt="Photo 10" onclick="showPreview(this)">
+
+            </div>
+
+
+        </section>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="js.js"> </script>
+    </main>
+
+    <footer>
+        <p>© 2025 uchinoko-memo</p>
+    </footer>
+
+</body>
+
+</html>

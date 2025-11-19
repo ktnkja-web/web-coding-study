@@ -1,0 +1,323 @@
+html {
+  font-size: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "Hiragino Kaku Gothic ProN";
+  font-size: 0.9rem;
+  color: rgb(51, 51, 51);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+}
+
+section {
+  padding-top: 5rem;
+}
+
+#humburger {
+  position: fixed;
+  top: 2rem;
+  right: 5%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  z-index: 1000;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+#humburger div {
+  border-top: 2px solid;
+  width: 30px;
+  height: 8px;
+  transition: all 0.5s;
+}
+
+#humburger.active {
+  z-index: 1000;
+}
+
+#humburger.active div {
+  border-color: white;
+}
+
+#humburger.active div:nth-child(1) {
+  transform: rotate(45deg) translateY(50%);
+}
+
+#humburger.active div:nth-child(2) {
+  transform: rotate(-45deg) translate(15%, -40%);
+}
+
+#mask {
+  position: fixed;
+  z-index: 900;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 1;
+  visibility: visible;
+}
+
+nav {
+  position: fixed;
+  top: 2.25rem;
+  left: 3.12rem;
+  width: 10rem;
+  z-index: 900;
+  margin: 0;
+  transform: translateX(-100%);
+  transition: transform 0.5s;
+}
+nav li {
+  color: white;
+  padding-bottom: 1.5rem;
+}
+
+nav.active {
+  transform: translateX(0%);
+}
+
+#mask.active {
+  opacity: 0;
+  visibility: hidden;
+}
+
+header {
+  position: fixed;
+  z-index: 800;
+  background-color: white;
+  height: 5rem;
+  line-height: 5rem;
+  width: 100%;
+  padding: 0.5rem 5% 0 5%;
+}
+header #title-logo {
+  width: 11.25rem;
+  height: 1.31rem;
+}
+
+#top-products {
+  margin-bottom: 2rem;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, calc((100% - 4.5rem) / 4));
+  gap: 1.5rem;
+}
+
+.product-card {
+  margin-bottom: 0.7rem;
+  font-size: 0.75rem;
+}
+.product-card img {
+  max-width: 100%;
+  margin-bottom: 0.6rem;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+.product-card img:hover {
+  opacity: 0.7;
+}
+.product-card p {
+  margin-bottom: 0.3rem;
+}
+
+.view-more {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 7rem;
+}
+
+#product-title {
+  padding-top: 8rem;
+  padding-bottom: 2rem;
+}
+
+#all-products {
+  margin-bottom: 2rem;
+  flex-grow: 1;
+}
+
+#pagination {
+  text-align: center;
+  margin-bottom: 6.5rem;
+}
+#pagination button {
+  all: unset;
+  cursor: pointer;
+  margin-right: 1.25rem;
+  margin-left: 1.25rem;
+}
+
+#pagination button.active {
+  cursor: text;
+}
+
+#product-wrapper {
+  padding-top: 5rem;
+}
+
+#product-name {
+  height: 5.6rem;
+  line-height: 5.6rem;
+}
+
+#detail {
+  display: flex;
+  width: 100%;
+  margin-bottom: 4.1rem;
+  gap: 4rem;
+}
+#detail img {
+  width: 25rem;
+  max-width: 100%;
+}
+#detail div {
+  width: 21rem;
+  max-width: 100%;
+}
+#detail div p {
+  margin-bottom: 1.87rem;
+  line-height: 1.2rem;
+}
+
+#characteristic {
+  display: flex;
+  justify-content: space-between;
+}
+#characteristic ul li {
+  margin-bottom: 0.5rem;
+}
+
+#about-title {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+#about {
+  height: calc(100% - 2.25rem);
+}
+#about p {
+  width: 37.5rem;
+  max-width: 100%;
+  line-height: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+#company h2 {
+  height: 5.6rem;
+  line-height: 5.6rem;
+}
+#company dl {
+  width: 38rem;
+  max-width: 100%;
+}
+#company dl .overviews {
+  display: flex;
+  border-bottom: 1px solid rgb(212, 210, 211);
+  padding: 1.4rem 0 1.4rem 0.8rem;
+}
+#company dl .overviews dt {
+  flex: 0.3;
+}
+#company dl .overviews dd {
+  flex: 0.7;
+}
+#company dl .overviews:last-of-type {
+  border-bottom: none;
+  margin-bottom: 1rem;
+  line-height: 1.5rem;
+}
+#company iframe {
+  width: 38rem;
+  max-width: 100%;
+  height: 19rem;
+  margin-bottom: 7.62rem;
+  filter: grayscale(100%);
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1.25rem;
+}
+footer #sns-link {
+  font-size: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+}
+footer #sns-link li {
+  margin-right: 1.87rem;
+}
+footer p {
+  font-size: 0.62rem;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 80%;
+  }
+  #humburger {
+    right: 10%;
+  }
+  header {
+    padding: 0.5rem 10% 0 10%;
+  }
+  .product-grid {
+    grid-template-columns: repeat(2, calc((100% - 1.2rem) / 2));
+    gap: 1.2rem;
+  }
+  footer {
+    display: block;
+  }
+  #sns-link {
+    margin-bottom: 0.7rem;
+  }
+  #all-products {
+    margin-bottom: 3rem;
+  }
+  nav li {
+    padding-top: 1rem;
+  }
+  #detail {
+    display: block;
+  }
+  #detail img {
+    margin-bottom: 1.8rem;
+  }
+  #product-title {
+    padding-top: 8rem;
+    padding-bottom: 1.3rem;
+    height: 0;
+    line-height: 0;
+  }
+  #about {
+    height: 100%;
+    margin-bottom: 6.37rem;
+  }
+  #company h2 {
+    margin-top: 1rem;
+  }
+  #company dl .overviews {
+    display: block;
+  }
+  #company dl .overviews dt {
+    margin-bottom: 1rem;
+  }
+}/*# sourceMappingURL=stylesheet.css.map */

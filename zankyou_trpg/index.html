@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" href="/image/favicon.ico" sizes="any">
+    <title>trpg-zankyou</title>
+    <meta name="description" content="個人用TRPGセッションサイトです">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/stylesheet.css">
+</head>
+
+<body>
+    <img src="/image/titlelogo.jpeg" alt="" id="headtitle">
+    <h1>オリジナルクトゥルフTRPG「懐中の残響」</h1>
+    <p id="player-info"></p>
+    <div id="layout">
+        <div class="column" id="column1">
+            <section id="document">
+                <div id="accordion-wrapper">
+                    <button id="accordion-button">
+                        <span id="button-text">--文書を選択--</span>
+                        <i id="accordion-icon" class="fa-solid fa-square-caret-down"></i>
+                    </button>
+                    <div id="accordion"></div>
+                </div>
+                <div id="contents"></div>
+            </section>
+
+            <section id="dice">
+                <h2 id="dice-title" class="section-title">ダイス</h2>
+                <div id="dice-wrapper">
+                    <select name="" id="diceCount">
+                        <option value="1">1 D</option>
+                        <option value="2">2 D</option>
+                        <option value="3">3 D</option>
+                    </select>
+                    <select name="" id="diceType">
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="6">6</option>
+                        <option value="8">8</option>
+                        <option value="10">10</option>
+                        <option value="12">12</option>
+                        <option value="100">100</option>
+                    </select>
+                </div>
+                <button id="rollBtn">🎲 ロール</button>
+                <p id="diceResult"></p>
+            </section>
+        </div>
+
+
+        <div class="column" id="column2">
+            <section id="location">
+                <div id="location-wrapper">
+                    <div id="location-image">
+                        <h2 class="section-title"><strong>現在地：</strong><span id="location-name"></span></h2>
+                        <img id="location-img" src="" alt="">
+                    </div>
+                    <div id="explore-point">
+                        <h2 class="section-title">探索推奨場所</h2>
+                        <ul id="explore-list"></ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="timeline">
+                <h2 class="section-title">行動ログ</h2>
+                <div id="logArea"></div>
+            </section>
+        </div>
+
+        <div class="column" id="column3">
+            <div id="character-display">
+                <div id="character-list"></div>
+                <h2 id="char-name"></h2>
+                <div id="char-img-pro">
+                    <img src="" alt="" id="char-image">
+                    <ul id="char-profile">
+                        <li>職業: <span id="char-job"></span></li>
+                        <li>性別: <span id="char-gender"></span></li>
+                        <li>年齢: <span id="char-age"></span></li>
+                        <li>出身: <span id="char-origin"></span></li>
+                        <li>学位: <span id="char-degree"></span></li>
+                        <li>精神的な障害: <span id="char-mental"></span></li>
+                    </ul>
+                </div>
+
+                <div id="item-wrapper">
+                    <p>所持品</p>
+                    <ul id="items"></ul>
+                </div>
+
+                <ul id="char-derived">
+                    <li>HP:
+                        <button class="dec" data-key="hp">-</button>
+                        <span id="char-hp"></span>
+                        <button class="inc" data-key="hp">+</button>
+                    </li>
+                    <li>MP:
+                        <button class="dec" data-key="mp">-</button>
+                        <span id="char-mp"></span>
+                        <button class="inc" data-key="mp">+</button>
+                    </li>
+                    <li>SAN値:現在/最大<br>
+                        <button class="dec" data-key="san">-</button>
+                        <span id="char-san"></span>
+                        <button class="inc" data-key="san">+</button> /99
+                    </li>
+                    <li>ダメージボーナス：<span id="char-db"></span></li>
+                </ul>
+
+                <ul id="char-stats">
+                    <li>STR: <span id="char-str"></span></li>
+                    <li>APP: <span id="char-app"></span></li>
+                    <li>SAN: <span id="char-san"></span></li>
+                    <li>CON: <span id="char-con"></span></li>
+                    <li>SIZ: <span id="char-siz"></span></li>
+                    <li>幸運: <span id="char-luck"></span></li>
+                    <li>POW: <span id="char-pow"></span></li>
+                    <li>INT: <span id="char-int"></span></li>
+                    <li>アイデア: <span id="char-idea"></span></li>
+                    <li>DEX: <span id="char-dex"></span></li>
+                    <li>EDU: <span id="char-edu"></span></li>
+                    <li>知識: <span id="char-know"></span></li>
+                </ul>
+
+                <ul class="status-grid">
+                    <!-- 戦闘技能 -->
+                    <li class="skills-title">[ 戦闘技能 ]</li>
+                    <li>回避: <span id="skill-dodge"></span>%</li>
+                    <li>マーシャルアーツ: <span id="skill-martialarts"></span>%</li>
+                    <li>こぶし: <span id="skill-fist"></span>%</li>
+                    <li>キック: <span id="skill-kick"></span>%</li>
+                    <li>頭突き: <span id="skill-headbutt"></span>%</li>
+                    <li>組み付き: <span id="skill-grapple"></span>%</li>
+                    <li>拳銃: <span id="skill-handgun"></span>%</li>
+                    <li>投擲: <span id="skill-throw"></span>%</li>
+                    <li>マシンガン: <span id="skill-machinegun"></span>%</li>
+                    <li>サブマシンガン: <span id="skill-smg"></span>%</li>
+                    <li>ライフル: <span id="skill-rifle"></span>%</li>
+                    <li>ショットガン: <span id="skill-shotgun"></span>%</li>
+
+                    <!-- 探索技能 -->
+                    <li class="skills-title">[ 探索技能 ]</li>
+                    <li>目星: <span id="skill-spot"></span>%</li>
+                    <li>聞き耳: <span id="skill-listen"></span>%</li>
+                    <li>応急手当: <span id="skill-firstaid"></span>%</li>
+                    <li>追跡: <span id="skill-track"></span>%</li>
+                    <li>隠れる: <span id="skill-hide"></span>%</li>
+                    <li>忍び歩き: <span id="skill-sneak"></span>%</li>
+                    <li>隠す: <span id="skill-conceal"></span>%</li>
+                    <li>写真術: <span id="skill-photography"></span>%</li>
+                    <li>図書館: <span id="skill-library"></span>%</li>
+                    <li>登攀: <span id="skill-climb"></span>%</li>
+                    <li>鍵開け: <span id="skill-locksmith"></span>%</li>
+                    <li>精神分析: <span id="skill-psychoanalysis"></span>%</li>
+
+                    <!-- 行動技能 -->
+                    <li class="skills-title">[ 行動技能 ]</li>
+                    <li>水泳: <span id="skill-swim"></span>%</li>
+                    <li>運転: <span id="skill-drive"></span>%</li>
+                    <li>電気修理: <span id="skill-electrical"></span>%</li>
+                    <li>操縦: <span id="skill-pilot"></span>%</li>
+                    <li>跳躍: <span id="skill-jump"></span>%</li>
+                    <li>ナビゲート: <span id="skill-navigate"></span>%</li>
+                    <li>機械修理: <span id="skill-mechanical"></span>%</li>
+                    <li>製作: <span id="skill-craft"></span>%</li>
+                    <li>乗馬: <span id="skill-ride"></span>%</li>
+                    <li>重機械操作: <span id="skill-heavy"></span>%</li>
+                    <li>変装: <span id="skill-disguise"></span>%</li>
+
+                    <!-- 交渉技能 -->
+                    <li class="skills-title">[ 交渉技能 ]</li>
+                    <li>母国語: <span id="skill-native"></span>%</li>
+                    <li>外国語: <span id="skill-language"></span>%</li>
+                    <li>信用: <span id="skill-credit"></span>%</li>
+                    <li>説得: <span id="skill-persuade"></span>%</li>
+                    <li>言いくるめ: <span id="skill-fasttalk"></span>%</li>
+                    <li>値切り: <span id="skill-bargain"></span>%</li>
+
+                    <!-- 知識技能 -->
+                    <li class="skills-title">[ 知識技能 ]</li>
+                    <li>歴史: <span id="skill-history"></span>%</li>
+                    <li>クトゥルフ神話: <span id="skill-mythos"></span>%</li>
+                    <li>オカルト: <span id="skill-occult"></span>%</li>
+                    <li>コンピューター: <span id="skill-computer"></span>%</li>
+                    <li>経理: <span id="skill-accounting"></span>%</li>
+                    <li>電子工学: <span id="skill-electronics"></span>%</li>
+                    <li>天文学: <span id="skill-astronomy"></span>%</li>
+                    <li>物理学: <span id="skill-physics"></span>%</li>
+                    <li>化学: <span id="skill-chemistry"></span>%</li>
+                    <li>考古学: <span id="skill-archaeology"></span>%</li>
+                    <li>心理学: <span id="skill-psychology"></span>%</li>
+                    <li>法律: <span id="skill-law"></span>%</li>
+                    <li>人類学: <span id="skill-anthropology"></span>%</li>
+                    <li>生物学: <span id="skill-biology"></span>%</li>
+                    <li>薬学: <span id="skill-pharmacy"></span>%</li>
+                    <li>地質学: <span id="skill-geology"></span>%</li>
+                    <li>博物学: <span id="skill-natural"></span>%</li>
+                    <li>芸術: <span id="skill-art"></span>%</li>
+                    <li>医学: <span id="skill-medicine"></span>%</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <section id="console" class="console-active">
+        <div id="doc-console"></div>
+        <div id="items-console"></div>
+        <div id="console-player1">
+            <h3>Player1</h3>
+            <div class="buttons"></div>
+        </div>
+
+        <div id="console-player2">
+            <h3>Player2</h3>
+            <div class="buttons"></div>
+        </div>
+        <div id="debug" style="white-space: pre; background: #eee; padding: 1rem;"></div>
+        </div>
+    </section>
+
+
+    <script type="module" src="/js/index.js"></script>
+</body>
+
+</html>
+
+<!-- http://127.0.0.1:5500/index.html?player=player1 -->

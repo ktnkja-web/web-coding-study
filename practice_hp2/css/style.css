@@ -1,0 +1,235 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: "Hiragino Kaku Gothic ProN";
+    font-size: 0.9rem;
+    color: #24292E;
+}
+
+.containor {
+    max-width: 960px;
+    padding: 0 4%;
+    margin: 0 auto;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 270px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+nav li {
+    margin-left: 30px;
+}
+
+#insta {
+    width: 20px;
+}
+
+#main-visual {
+    background-image: url("../img/mainvisual-pc.jpg");
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+    height: 420px;
+}
+
+section {
+    width: 100%;
+    padding-bottom: 50px;
+
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 88px auto 70px;
+}
+
+#about p {
+    line-height: 1.3rem;
+}
+
+#profile {
+    margin: 2rem 0;
+}
+
+#work-imgs {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 25px;
+    gap: 29.8px;
+}
+
+#work-imgs img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#news-topic li:first-child {
+    border-top: 1px solid #C8C8C8;
+}
+
+#news-topic li {
+    border-bottom: 1px solid #C8C8C8;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.3rem;
+
+}
+
+
+
+.date {
+    width: 20%;
+
+    padding-left: 15px;
+}
+
+.news-content {
+    width: 80%;
+    padding: 0 15px;
+
+}
+
+form {
+    text-align: center;
+    width: 100%;
+}
+
+#contact div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.3rem;
+
+}
+
+.fill-in {
+    width: 85%;
+    max-width: 730px;
+    margin-bottom: 10px;
+    border: 1px solid #C8C8C8;
+}
+
+#name,
+#e-mail {
+    height: 2.7rem;
+}
+
+#message {
+    height: 10.1rem;
+    padding: 0.7rem;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+input[type="submit"] {
+    width: 200px;
+    height: 54px;
+    margin-top: 25px;
+    background-color: #24292E;
+    color: white;
+    border-width: 1px;
+
+}
+
+input[type="submit"]:hover{
+    background-color: white;
+    color: #24292E;
+
+}
+footer {
+    background-color: #24292E;
+    color: white;
+    font-size: 0.5rem;
+    text-align: center;
+    width: 100%;
+    padding: 12px 0;
+    margin-top: 75px;
+}
+
+
+@media(max-width:600px) {
+    section {
+        padding-bottom: 32px;
+    }
+
+    header {
+        flex-direction: column;
+        justify-content: end;
+        height: 100px;
+        font-size: 0.8rem;
+
+    }
+
+    nav ul {
+        padding: 8px 0px 13px;
+    }
+
+    nav li {
+        margin: 0px 10px;
+    }
+
+    #insta {
+        width: 1.25rem;
+    }
+
+    #main-visual {
+        background-image: url("../img/mainvisual-sp.jpg");
+        background-position: center;
+    }
+
+    h2 {
+        margin: 46px auto;
+    }
+
+    #about h2 {
+        margin-top: 92px;
+    }
+
+    #work-imgs {
+        grid-template-columns: 1fr;
+    }
+
+    #news-topic li {
+        flex-direction: column;
+        padding: 0.95rem 0;
+    }
+
+    .class,
+    .news-content {
+        width: 100%;
+    }
+    footer{
+    margin-top: 40px;
+
+    }
+    #contact div {
+        flex-direction: column;
+align-items: flex-start;
+    }
+    .fill-in{
+        width: 100%;
+    }
+}

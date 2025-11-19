@@ -1,0 +1,254 @@
+@charset "utf-8";
+
+html {
+    font-family: Arial;
+    font-size: 0.875rem; // 14px
+    line-height: 1.5;
+}
+
+.site-header_logo img {
+    position: absolute;
+    top: 2.14rem;
+    right: 2.14rem;
+}
+
+.mainvisual {
+    width: 100%;
+    height: 42.2rem;
+    margin-bottom: 5.6rem;
+    object-fit: cover;
+    object-position: top;
+}
+
+.introduction_message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+    margin: 3.1rem 1rem;
+}
+
+.introduction_title {
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.introduction_text {
+    max-width: 38rem;
+    text-align: center;
+}
+
+.introduction_cards {
+    display: flex;
+    gap: 1.3rem;
+    justify-content: center;
+    margin: 0 1rem 5.6rem;
+}
+
+.intro-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1/1;
+    width: min(34rem, 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.intro-card--archive {
+    background-image: url(../img/magazine-archive.jpg);
+}
+
+.intro-card--new {
+    background-image: url(../img/magazine-new.jpg);
+}
+
+.intro-card_inner {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 0.1rem;
+    padding: 0 2rem;
+    width: 20rem;
+    height: 6.8rem;
+    background-color: rgba(0, 0, 0, 0.45);
+
+}
+
+.intro-card_title {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+
+.fashion {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 5.6rem;
+    width: 100%;
+    height: auto;
+    padding-bottom: 18rem;
+    background-image: url(../img/fashion.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+
+}
+
+.fashion_inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.3rem;
+    margin-top: 4rem;
+}
+
+.fashion_title {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.fashion_text {
+    text-align: center;
+    margin: 0.5rem 1rem;
+    max-width: 38rem;
+}
+
+.fashion_button {
+    width: 9rem;
+    height: 2.8rem;
+    border: solid 1px;
+    background-color: #11ffee00;
+    font-size: 0.75rem;
+}
+
+.items {
+    width: 100%;
+    background-color: rgba(245, 245, 245, 1);
+}
+
+.items_inner {
+    display: grid;
+    gap: 2.85rem;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    width: 74.35rem;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 4.3rem 1rem;
+}
+
+.items__image {
+    max-width: 34rem;
+    width: 100%;
+    height: auto;
+}
+
+.items-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.14rem;
+    max-width: 34rem;
+    width: 100%;
+}
+
+.items-card__title {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.site-footer__inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2.4rem;
+    padding: 7.14rem 6rem;
+    background-color: rgba(51, 51, 51, 1);
+    color: white;
+    line-height: 1.8rem;
+
+    h2 {
+        font-size: 1.14rem;
+        margin-bottom: 0.3rem;
+    }
+
+    p {
+        font-size: 0.85rem;
+    }
+}
+
+.site-footer__logo {
+    width: 8.57rem;
+    height: 2.85rem;
+}
+
+.site-footer__column--left {
+    width: 10.78rem;
+}
+
+.site-footer__column--right {
+    width: 22.14rem;
+}
+
+.site-footer__title {
+    font-size: 1.14rem;
+    font-weight: bold;
+}
+
+.site-footer__copy {
+    margin: 2.14rem 0;
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+
+    .mainvisual {
+        margin-bottom: 5.6rem;
+    }
+
+    .introduction_cards {
+        display: flex;
+        flex-direction: column;
+        gap: 1.3rem;
+        justify-content: center;
+        margin: 0 1rem 5.6rem;
+    }
+
+    .items_inner {
+        grid-template-columns: 1fr;
+    }
+
+
+    .site-footer__inner {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2.14rem 1rem;
+
+    }
+
+    .site-footer__logo {
+        margin: 0 auto;
+    }
+}
+
+
+
+
+/* スマホ（iPhone） */
+// @media (max-width: 767px) { ... }
+
+/* タブレット縦向き（iPad縦） */
+// @media (min-width: 768px) and (max-width: 1023px) { ... }
+
+/* タブレット横向き・小型PC */
+// @media (min-width: 1024px) and (max-width: 1279px) { ... }
+
+/* PC */
+// @media (min-width: 1280px) { ... }

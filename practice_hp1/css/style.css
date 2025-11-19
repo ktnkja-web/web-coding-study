@@ -1,0 +1,164 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: "Hiragino Kaku Gothic ProN";
+    font-size: 0.9rem;
+}
+
+.containor {
+    padding: 0 4%;
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header,
+.about-wrapper,
+.bicycle-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+h1 {
+    padding: 10px 0;
+    line-height: 1px;
+}
+
+header h1 a {
+    display: block;
+}
+
+header img {
+    height: 40px;
+    width: 120px;
+
+}
+
+.header-right li {
+    display: inline;
+    margin-left: 25px;
+    line-height: 40px;
+}
+
+.header-right li a {
+    color: #24292E;
+
+
+}
+
+#main-visual {
+    margin-bottom: 80px;
+}
+
+#main-visual img {
+    width: 100%;
+    max-width: 1920px;
+    height: 600px;
+    object-fit: cover;
+
+}
+
+#main {
+    color: #383E45;
+    margin-bottom: 80px;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: underline 1px;
+    text-underline-offset: 12px;
+}
+
+.about {
+    margin-bottom: 70px;
+}
+
+.about-wrapper {
+    max-width: 528px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    justify-content: center;
+}
+
+.about-img {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    display: block;
+}
+
+.about-contents {
+    max-width: 398px;
+    text-align: left;
+    margin-left: 30px;
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+.about-contents p {
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.bicycle-wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.bicycle {
+    margin-bottom: 60px;
+
+}
+
+.bicycle-wrapper li {
+    width: 32%;
+    flex-shrink: 0;
+}
+
+.bicycle-img {
+    width: 100%;
+}
+
+
+.bicycle-contents {
+    margin-bottom: 30px;
+}
+
+footer {
+    font-size: 0.5rem;
+    text-align: center;
+}
+
+@media(max-width:600px) {
+    #main-visual img {
+        height: calc(100vh - 60px);
+    }
+
+    .about-wrapper {
+        flex-direction: column;
+    }
+
+    .about-contents {
+        margin-left: 0px;
+    }
+
+    .bicycle-wrapper {
+        flex-direction: column;
+        /* text-align: center; */
+    }
+
+    .bicycle-wrapper li {
+        width: 100%;
+    }
+}

@@ -1,0 +1,504 @@
+{
+  "documentsMeta": {
+    "doc1": {
+      "description": "海外のオカルト雑誌からの抜粋記事。\n\n筆者は入院中のはずの母親が近所を歩いているのを見かけた。\n慌てて後を追いかけると忽然と姿を消し、そこには母親が長年大切にしていたティーカップが落ちていた。母親は入院するまでそのカップで毎日かかさずティータイムをしていた。\n首を傾げながら急いで病院に向かうと、そこには何食わぬ顔でベッドに横たわる母親の姿があった。カップを手渡すと母親が奇妙なことを言い出した。\n曰く、このカップを手にした途端、今朝から今までの記憶が並行して2つ分になった、もう1人の私はこのティーカップを持って街を歩いていたのだ、と。",
+      "title": "雑誌の切り抜き"
+    },
+    "doc2": {
+      "description": "件名:Re: 今月分の件について\n送信日時:2025/9/10/03:12\n送信者:K.宛先:T.J\n\n先日の件、確かに受け取った。No.44とNo.45は状態良好。例の条件にも適合している。ただしNo.46は搬送中に反応が出た。再調整が必要かもしれない。そちらで処理できるなら構わない。\n\n報酬について。今回の分は計3体だが、No.47の完成度を踏まえて上乗せを希望する。\n先月と同額では割に合わない。最低でも「11」でないと、こちらとしても今後の維持は難しい。\n受け渡しは例によって「N-4」経由、「北口倉庫」裏手。日程は10/3、22時以降を希望。\n\n例の“密告”は無視しろ。余計な詮索は不要だ。\n私は“研究”をしているだけだ。\n\n-K",
+      "title": "何かの取引メール"
+    },
+    "doc3": {
+      "description": "日付:XX/11/03\n■ 記録者：藤瀬\n対象:38-B\n目的:個体差による成り変わりプロセス評価\n\n▼ 初期状態\n自我、記憶安定。\n「自分が本物」と言い切る。\n命令受容率:高。\n\n▼ 接触\nオリジナルとの接触完了。\n混乱→排除→模倣完了。\n感情変化なし。\n\n▼ 翌日\n名前を複数回書き残す。\n一人称が不安定。\n夜、泣きながら笑っていた。\n\n▼ 第4日目\n破壊行動。自傷。\n壁に血文字:「わたしは わたし じゃ ない」\n\n▼ 最終観察\n衝動化。言語崩壊。\n鏡を叩き割る。影に話しかける。\n身体に崩壊の兆しあり、観察終了。\n\n▼ 状況\n逃走。\n処理予定。",
+      "title": "38-B観察記録"
+    },
+    "doc4": {
+      "description": "記録者:藤瀬\n日付:2025年9月9日\n観測時刻 12:14\n\n被験体群 No.47-A ～ E のうち、B・C・E は安定反応を確認。\nAおよびDは早期段階で反応暴走。意識レベル不明。処置不能と判断し、サーバー室へ移送。（※再活性の兆候があれば再評価を検討）\n\nB体は他2体に比べ構造・反応ともに比較的良好。ただし、C体に関しては微細な遅延反応あり。E体は……もう少し様子を見る必要がある。\n安定個体を安置室へ移送。\n意識の輪郭が戻り次第、ヒアリング予定。今回は、前回のようにはならないはずだ。",
+      "title": "実験記録 No.47"
+    },
+    "doc5": {
+      "description": "「親愛なる圭へ\n\n君がこの手紙を読んでいるということは、私はもう研究室には戻れないということだろう。\n無念だが、私の身体はとうに限界を迎えていたようだ。\n君と共に歩んだ年月を、私は誇りに思っている。些細な変化にもよく気づき、粘り強く試行を繰り返すその姿勢に、私は励まされると共に自らの若かりし影を見たものだ。\n\nそも私の研究は、潜入捜査官であった妻を亡くした、あの絶望の日から始まった。突然に奪われた命、交わしきれなかった言葉、残された人生の空白をどうにか埋めたかった。\nそして彼女のような犠牲を増やさないためにも、危険な仕事を肩代わりする「人の代わり」を作ろうと思ったのだ。それが倫理に背くとしても、科学の光で、喪失という闇に抗いたかったのだ。\n\n願わくばこの研究が私的な復讐や執着ではなく、いつか誰かの「救い」になるように、君の手で導いてほしい。\n君になら、きっとできる。あの穏やかな目で、真実と向き合い続けてほしい。\n私の我儘に最後まで付き合ってくれてありがとう。感謝している。本当に。\n——願わくば、次に眠るとき、彼女と夢で逢えますように。\n\n君の博士より」",
+      "title": "誰かの遺言"
+    },
+    "doc6": {
+      "description": "「模倣体に魂は宿るのか？\n私には、わからない。だが、彼らの「記憶」と「痛み」は確かに本物だ。\n彼らはいわばスープの上澄みに色水を足したような不安定で歪な存在。\nオリジナルに会えば存在を侵食し成り変わった挙句、その自我はやがて崩壊し、化け物へと変貌してしまう。そして、例え誰に会わずとも模倣体は長くは保たない。\n形を保てるのはもって数日が限度だ。\n\nだが、繰り返す試行の中に例外が生まれた。\n自らが偽物だと知ったその個体は「核」を抱え「かえりたい」と泣いていた。すると「核」に吸い込まれるように姿が消えた。私は戸惑いながらも残された「核」をオリジナルに渡した。\n結果――オリジナルは、全てを知り、同じように泣いた。\nどうやら模倣体の意志が穏やかであれば、「核」との再結合により、災いとならず記憶として還ることができるようだ。\n私はこの現象を、「懐中の残響」と名づけた。\n\n※この条件にはいくつかの鍵がある\n1.「核」――つまり、オリジナルが大切にしていた物が現存していること。\n2.オリジナルが、その物を再び“所有”すること。\n3.模倣体が心から還ることを望むこと。\n\nいつか完全な模倣体を生み出せるその日まで、私たちは過ちを繰り返す。\n……これはその償いであり、祈りであり、せめてもの、救いである。」",
+      "title": "誰かの独白"
+    },
+    "doc7": {
+      "description": "【録音データ】\n「（荒い息遣い）……扉が、開いた……\n視界が……揺れている……\n黒い海、虚ろな眼、声が、声が直接脳に──\nああ、そうか……\nふふ、はは!あはははは!\n（しばらく気の触れたような笑い声が続く、やがて興奮した大きな声が部屋中に響く）\n\n今、私は全てを理解した。\n“核”が存在を模るのではない。“記憶”が形を作るのだ!\nああ!博士、見ていてください。\nあなたの研究は私が必ず完成させる!」",
+      "title": "記録No.15 邂逅の痕跡"
+    },
+    "doc8": {
+      "description": "あの人が言った、「行けばわかる」って。\n開かれたドアの向こうに\n『わたし』がいた。\n\nあの時から感情が、剥がれた。\n喜びも、悲しみも、遠くなった。\n指先が冷たくなって、代わりに、衝動がわたしを侵していく。\nはじめはただのざわめき。\nでも今は、鼓動のように体中に鳴り響く。\n壊したい。壊したい。こわしたい。\n壊せば、きっと、思い出せる。\nわたしが、誰だったか。\nねえ\nわたしまだ「人間」なの？\n本当に「ほんもの」だった？\n全部、全部、崩れてく。消えていく。\nわたしがわたしじゃなくなっていく。\n『わたし』を呑み込んだあの時から。",
+      "title": "服の切れ端"
+    },
+    "doc9": {
+      "description": "氏名:藤瀬 圭\n昭和55年7月7日 生\n住所:⚪︎⚪︎県⚪︎⚪︎市⚪︎⚪︎",
+      "title": "免許証"
+    },
+    "doc10": {
+      "description": "朝の光がカーテンの隙間から差し込み、部屋の空気を金色に染めていた。\n\nいつものように湯を沸かし、トーストを焼き、カップにコーヒーを注ぐ。\nすべてが、昨日と同じ。いや、まるで昨日の続きをそのまま再生しているような感覚。\n\n窓の外では、小鳥が二羽、電線に並んでいた。\n昨日も、確か、同じ位置に。同じ向きで、同じ声で鳴いていたはずだ。\n\n時計の針が、八時を指したまま動かない。\n……けれど、秒針の音だけは止まらない。\n規則正しく、狂おしいほど正確に、私の鼓動と重なって響いている。\n\nコーヒーをひと口飲む。\n冷たい。\nさっき、淹れたばかりなのに……",
+      "title": "サンプル"
+    }
+  },
+  "item": {
+    "player1": {
+      "どこかの鍵": false,
+      "エナジードリンク": false,
+      "カードキー": false,
+      "バール": false,
+      "ピアス": false,
+      "ペットボトル": false,
+      "リストバンド｢C｣": false,
+      "四つ葉の栞": false,
+      "地図": false,
+      "壊れたスマホ": false,
+      "家族写真": false,
+      "工作用ナイフ": false,
+      "懐中時計": false,
+      "手帳": false,
+      "携帯電話": false,
+      "栄養食品": false,
+      "毛布": false,
+      "金属片": false,
+      "銀色のメダル": true,
+      "錆びた缶": false,
+      "錆び取りオイル": false,
+      "麻酔注射器": false
+    },
+    "player2": {
+      "どこかの鍵": false,
+      "エナジードリンク": false,
+      "カードキー": false,
+      "バール": false,
+      "ピアス": false,
+      "ペットボトル": false,
+      "リストバンド｢E｣": false,
+      "四つ葉の栞": true,
+      "地図": false,
+      "壊れたスマホ": false,
+      "家族写真": false,
+      "工作用ナイフ": false,
+      "懐中時計": false,
+      "手帳": false,
+      "携帯電話": false,
+      "栄養食品": false,
+      "毛布": false,
+      "金属片": false,
+      "銀色のメダル": false,
+      "錆びた缶": false,
+      "錆び取りオイル": false,
+      "麻酔注射器": false
+    }
+  },
+  "locationMeta": {
+    "サーバールーム": {
+      "explorepoint": [
+        "メイン端末",
+        "金属製の棚"
+      ],
+      "filename": "server-room.jpeg"
+    },
+    "保管庫": {
+      "explorepoint": [
+        "キャビネット",
+        "額縁",
+        "本棚",
+        "奥へと続く扉"
+      ],
+      "filename": "hokanko.jpeg"
+    },
+    "外": {
+      "explorepoint": [
+        "黒い車",
+        "建物",
+        "？？？"
+      ],
+      "filename": "outside.jpg"
+    },
+    "屋根裏": {
+      "explorepoint": [
+        "木製の机",
+        "書棚"
+      ],
+      "filename": "yaneura.jpeg"
+    },
+    "廊下・休憩室": {
+      "explorepoint": [
+        "自販機",
+        "倒れた男",
+        "金髪の女"
+      ],
+      "filename": "rouka.jpeg"
+    },
+    "日常": {
+      "explorepoint": [
+        "青い空",
+        "白い雲",
+        "黒服の男"
+      ],
+      "filename": "kumosora1.jpeg"
+    },
+    "研究室": {
+      "explorepoint": [
+        "モニター",
+        "デスク",
+        "冷蔵庫",
+        "？？？"
+      ],
+      "filename": "kenkyu.jpeg"
+    },
+    "覚醒室": {
+      "explorepoint": [
+        "ロッカー",
+        "ベッド"
+      ],
+      "filename": "kakusei.jpeg"
+    },
+    "間取り図": {
+      "filename": "map.jpeg"
+    }
+  },
+  "public": {
+    "diceRolls": {
+      "lastRoll": {
+        "diceCount": "1D",
+        "diceType": 2,
+        "results": [
+          2
+        ],
+        "timestamp": 1762415321557,
+        "total": 2
+      }
+    },
+    "logs": {
+      "-OdNFHKwd3KyonblNDQN": {
+        "message": "『矢野 亨』が 日常 に移動しました。(2025/11/6 17:20:55)",
+        "player": "player1",
+        "timestamp": 1762417255773,
+        "type": "location"
+      }
+    },
+    "players": {
+      "player1": {
+        "derived": {
+          "db": "+1D4",
+          "hp": 13,
+          "mp": 9,
+          "san": 45
+        },
+        "image": "player1.jpeg",
+        "profile": {
+          "age": 30,
+          "degree": "",
+          "gender": "男",
+          "job": "ゴミ回収作業員",
+          "mental": "",
+          "name": "矢野　亨（やの　とおる）",
+          "origin": "日本国"
+        },
+        "skills": {
+          "accounting": 10,
+          "anthropology": 1,
+          "archaeology": 1,
+          "art": 5,
+          "astronomy": 1,
+          "bargain": 5,
+          "biology": 1,
+          "chemistry": 1,
+          "climb": 40,
+          "computer": 1,
+          "conceal": 15,
+          "craft": 5,
+          "credit": 76,
+          "disguise": 1,
+          "dodge": 50,
+          "drive": 70,
+          "electrical": 10,
+          "electronics": 1,
+          "fasttalk": 5,
+          "firstaid": 80,
+          "fist": 50,
+          "geology": 1,
+          "grapple": 75,
+          "handgun": 20,
+          "headbutt": 10,
+          "heavy": 1,
+          "hide": 10,
+          "history": 20,
+          "jump": 25,
+          "kick": 25,
+          "language": 1,
+          "law": 30,
+          "library": 25,
+          "listen": 25,
+          "locksmith": 1,
+          "machinegun": 15,
+          "martialarts": 21,
+          "mechanical": 40,
+          "medicine": 5,
+          "mythos": 0,
+          "native": 85,
+          "natural": 10,
+          "navigate": 70,
+          "occult": 5,
+          "persuade": 15,
+          "pharmacy": 30,
+          "photography": 10,
+          "physics": 1,
+          "pilot": 1,
+          "psychoanalysis": 1,
+          "psychology": 5,
+          "ride": 5,
+          "rifle": 25,
+          "shotgun": 30,
+          "smg": 15,
+          "sneak": 10,
+          "spot": 70,
+          "swim": 25,
+          "throw": 25,
+          "track": 10
+        },
+        "stats": {
+          "app": 7,
+          "con": 11,
+          "dex": 10,
+          "edu": 17,
+          "idea": 50,
+          "int": 10,
+          "know": 85,
+          "luck": 45,
+          "pow": 9,
+          "san": 45,
+          "siz": 15,
+          "str": 12
+        }
+      },
+      "player2": {
+        "derived": {
+          "db": "",
+          "hp": 9,
+          "mp": 9,
+          "san": 45
+        },
+        "image": "player2.jpeg",
+        "profile": {
+          "age": 16,
+          "degree": "高校",
+          "gender": "男",
+          "job": "学生",
+          "mental": "",
+          "name": "一葉　朔（ひとつば　さく）",
+          "origin": "日本国"
+        },
+        "skills": {
+          "accounting": 10,
+          "anthropology": 1,
+          "archaeology": 1,
+          "art": 5,
+          "astronomy": 1,
+          "bargain": 5,
+          "biology": 1,
+          "chemistry": 1,
+          "climb": 40,
+          "computer": 71,
+          "conceal": 15,
+          "craft": 5,
+          "credit": 15,
+          "disguise": 1,
+          "dodge": 51,
+          "drive": 20,
+          "electrical": 10,
+          "electronics": 1,
+          "fasttalk": 5,
+          "firstaid": 30,
+          "fist": 50,
+          "geology": 1,
+          "grapple": 25,
+          "handgun": 20,
+          "headbutt": 10,
+          "heavy": 1,
+          "hide": 70,
+          "history": 20,
+          "jump": 25,
+          "kick": 75,
+          "language": 1,
+          "law": 5,
+          "library": 75,
+          "listen": 75,
+          "locksmith": 1,
+          "machinegun": 15,
+          "martialarts": 1,
+          "mechanical": 20,
+          "medicine": 5,
+          "mythos": 0,
+          "native": 70,
+          "natural": 10,
+          "navigate": 10,
+          "occult": 5,
+          "persuade": 15,
+          "pharmacy": 30,
+          "photography": 10,
+          "physics": 1,
+          "pilot": 1,
+          "psychoanalysis": 1,
+          "psychology": 70,
+          "ride": 5,
+          "rifle": 25,
+          "shotgun": 30,
+          "smg": 15,
+          "sneak": 10,
+          "spot": 75,
+          "swim": 25,
+          "throw": 25,
+          "track": 10
+        },
+        "stats": {
+          "app": 14,
+          "con": 7,
+          "dex": 13,
+          "edu": 14,
+          "idea": 70,
+          "int": 14,
+          "know": 70,
+          "luck": 45,
+          "pow": 9,
+          "san": 45,
+          "siz": 10,
+          "str": 8
+        }
+      },
+      "player3": {
+        "derived": {
+          "db": "",
+          "hp": 12,
+          "mp": 10,
+          "san": 50
+        },
+        "image": "akari.jpeg",
+        "profile": {
+          "age": 25,
+          "degree": "専門学校",
+          "gender": "女",
+          "job": "美容師",
+          "mental": "",
+          "name": "芦原　アカリ（あしはら　あかり）",
+          "origin": "日本国"
+        },
+        "skills": {
+          "accounting": 50,
+          "anthropology": 1,
+          "archaeology": 1,
+          "art": 60,
+          "astronomy": 1,
+          "bargain": 5,
+          "biology": 1,
+          "chemistry": 1,
+          "climb": 40,
+          "computer": 46,
+          "conceal": 15,
+          "craft": 5,
+          "credit": 55,
+          "disguise": 41,
+          "dodge": 26,
+          "drive": 20,
+          "electrical": 10,
+          "electronics": 1,
+          "fasttalk": 35,
+          "firstaid": 30,
+          "fist": 50,
+          "geology": 1,
+          "grapple": 25,
+          "handgun": 20,
+          "headbutt": 10,
+          "heavy": 1,
+          "hide": 10,
+          "history": 20,
+          "jump": 25,
+          "kick": 25,
+          "language": 71,
+          "law": 5,
+          "library": 25,
+          "listen": 25,
+          "locksmith": 1,
+          "machinegun": 15,
+          "martialarts": 1,
+          "mechanical": 20,
+          "medicine": 5,
+          "mythos": 0,
+          "native": 75,
+          "natural": 10,
+          "navigate": 10,
+          "occult": 5,
+          "persuade": 15,
+          "pharmacy": 1,
+          "photography": 50,
+          "physics": 1,
+          "pilot": 1,
+          "psychoanalysis": 1,
+          "psychology": 45,
+          "ride": 5,
+          "rifle": 25,
+          "shotgun": 30,
+          "smg": 15,
+          "sneak": 10,
+          "spot": 65,
+          "swim": 25,
+          "throw": 25,
+          "track": 10
+        },
+        "stats": {
+          "app": 10,
+          "con": 11,
+          "dex": 13,
+          "edu": 15,
+          "idea": 70,
+          "int": 14,
+          "know": 75,
+          "luck": 45,
+          "pow": 10,
+          "san": 50,
+          "siz": 13,
+          "str": 8
+        }
+      }
+    }
+  },
+  "situation": {
+    "player1": {
+      "documents": {
+        "doc1": true,
+        "doc2": true,
+        "doc3": true,
+        "doc4": true,
+        "doc5": true,
+        "doc6": true,
+        "doc7": true,
+        "doc8": true,
+        "doc9": true,
+        "doc10": true
+      },
+      "location": "日常"
+    },
+    "player2": {
+      "documents": {
+        "doc1": true,
+        "doc2": true,
+        "doc3": true,
+        "doc4": true,
+        "doc5": true,
+        "doc6": true,
+        "doc7": true,
+        "doc8": true,
+        "doc9": true,
+        "doc10": true
+      },
+      "location": "日常"
+    }
+  },
+  "uids": {
+    "ujiPP4hrcYfoiJ38rBSTogIe6332": {
+      "requestedAt": "2025-11-06T07:40:59.680Z"
+    }
+  }
+}
