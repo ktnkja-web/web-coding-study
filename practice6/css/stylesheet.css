@@ -1,1 +1,115 @@
-/*# sourceMappingURL=stylesheet.css.map */
+html {
+  font-family: "Noto Serif JP", serif;
+  font-size: 16px;
+}
+
+.site-header {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background-image: url(../img/mainvisual-pc.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  writing-mode: vertical-rl;
+}
+@media (max-width: 767px) {
+  .site-header {
+    background-image: url(../img/mainvisual-sp.jpg);
+  }
+}
+
+.site-header__logo img {
+  position: absolute;
+  top: 60px;
+  right: 80px;
+  width: 40px;
+}
+
+.site-header__nav {
+  margin-top: 60px;
+  margin-right: 180px;
+}
+.site-header__nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.site-header__onlinestore {
+  display: grid;
+  place-items: center;
+  position: absolute;
+  bottom: 30px;
+  left: 40px;
+  width: 68px;
+  height: 252px;
+  border: 8px solid rgba(255, 255, 255, 0);
+  outline: 1px solid #CCCCCC;
+  outline-offset: -8px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.main {
+  background-color: #E6E2D7;
+}
+
+#news {
+  writing-mode: vertical-rl;
+  width: 100%;
+  height: 720px;
+  padding: 180px 15% 180px 0;
+}
+
+.news__title {
+  position: relative;
+  margin-left: 100px;
+  font-size: 2.25rem;
+}
+
+.news__title::before {
+  content: "News";
+  display: block;
+  position: absolute;
+  right: -20px;
+  top: -2%;
+  font-size: 0.87rem;
+}
+
+.news__list {
+  display: flex;
+  flex-direction: column;
+  height: 16rem;
+  margin-top: 80px;
+}
+
+.news__list-item {
+  position: relative;
+  padding: 0 30px;
+}
+
+.news__list-item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0px;
+  top: -5%;
+  width: 1px;
+  height: 110%;
+  background-color: #000;
+}
+
+.news__list-item:last-child::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: -5%;
+  width: 1px;
+  height: 110%;
+  background-color: #000;
+}
+
+.news__list-item--time {
+  font-size: 0.75rem;
+}/*# sourceMappingURL=stylesheet.css.map */
