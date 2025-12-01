@@ -14,7 +14,9 @@
 
 <body>
     <header class="site-header">
-        <h1 class="site-header__logo"><img src="img/logo.svg" alt=""></h1>
+        <h1 class="site-header__logo">
+            <a href="#"><img src="img/logo.svg" alt="創作"></a>
+        </h1>
         <nav aria-label="メインメニュー" class="site-header__nav">
             <ul>
                 <li class="site-header__nav-item"><a href="#news">お知らせ</a></li>
@@ -26,7 +28,7 @@
     </header>
 
     <main class="main">
-        <section id="news">
+        <section id="news" class="wrapper">
             <h2 class="news__title">お知らせ</h2>
             <ul class="news__list">
                 <li class="news__list-item">
@@ -58,36 +60,36 @@
             </ul>
         </section>
 
-        <section id="item">
+        <section id="item" class="wrapper">
             <div class="item__card item__card--first">
-                <h2 class="item__title item__title--first"></h2>
+                <h2 class="item__title item__title--first">新しい価値の創造</h2>
                 <div class="item__content item__content--first">
-                    <p class="item__text item__text--first"></p>
+                    <p class="item__text item__text--first">テキストテキスト テキストテキスト</p>
                 </div>
             </div>
 
             <div class="item__card item__card--second">
-                <h2 class="item__title item__title--second"></h2>
+                <h2 class="item__title item__title--second">科学と技術の調和</h2>
                 <div class="item__content item__content--second">
-                    <p class="item__text item__text--second"></p>
+                    <p class="item__text item__text--second">テキストテキスト テキストテキスト</p>
                 </div>
             </div>
         </section>
+    </main>
 
         <div id="access">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.753427169853!2d134.6627977350091!3d34.879402567437744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35551e4b7975fa29%3A0x2b71de925045e12a!2z5LqU5LiB5bGV5pyb5omA!5e0!3m2!1sja!2sjp!4v1763704475495!5m2!1sja!2sjp"
-                class="map" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                class="map" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-    </main>
 
     <footer class="site-footer">
         <div class="site-footer__inner">
             <h2 class="site-footer__logo"><img src="img/logo.svg" alt=""></h2>
 
             <div class="site-footer__info">
-                <p class="site-footer__text site-footer__text--addres">〒１０６-００３２　東京都港区六本木５丁目×××××</p>
+                <p class="site-footer__text site-footer__text--addres">〒１０６&mdash;００３２<span></span>東京都港区六本木５丁目×××××</p>
                 <p class="site-footer__text site-footer__text--number">電話：０３&mdash;ＸＸＸＸ&mdash;ＸＸＸＸ</p>
             </div>
 
@@ -100,7 +102,8 @@
             </nav>
 
             <div class="site-footer__links">
-                <p class="site-footer__link site-footer__link--store">オンラインストアを見る&mdash;</p>
+                <p class="site-footer__link site-footer__link--store">オンラインストアを見る</p>
+                <span>&#124;</span>
                 <p class="site-footer__link site-footer__link--
                 inquiry
                 ">お問い合わせ</p>

@@ -6,30 +6,33 @@ html {
 .site-header {
   position: relative;
   width: 100%;
-  height: 600px;
+  height: 100vh;
+  padding: 60px 80px;
   background-image: url(../img/mainvisual-pc.jpg);
   background-size: cover;
   background-position: center;
   color: #fff;
   writing-mode: vertical-rl;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .site-header {
+    padding: 20px;
     background-image: url(../img/mainvisual-sp.jpg);
   }
 }
 
+.site-header__logo {
+  margin-left: 60px;
+}
+.site-header__logo a {
+  display: inline-block;
+}
 .site-header__logo img {
-  position: absolute;
-  top: 60px;
-  right: 80px;
+  display: block;
   width: 40px;
+  height: auto;
 }
 
-.site-header__nav {
-  margin-top: 60px;
-  margin-right: 180px;
-}
 .site-header__nav ul {
   display: flex;
   flex-direction: column;
@@ -48,25 +51,58 @@ html {
   outline: 1px solid #CCCCCC;
   outline-offset: -8px;
   background-color: rgba(255, 255, 255, 0.2);
+  transition-duration: 0.3s;
+}
+.site-header__onlinestore:hover {
+  border: 8px solid rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0.6705882353);
+  outline: 1px solid #000;
+}
+@media (max-width: 768px) {
+  .site-header__onlinestore {
+    bottom: 20px;
+    left: 20px;
+  }
 }
 
 .main {
+  width: 100%;
+  padding: 180px 208px 160px;
   background-color: #E6E2D7;
+}
+@media (max-width: 768px) {
+  .main {
+    padding: 80px 20px;
+  }
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1024px;
+  height: auto;
+  margin: 0 auto;
 }
 
 #news {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 9%;
   writing-mode: vertical-rl;
-  width: 100%;
-  height: 720px;
-  padding: 180px 15% 180px 0;
+  margin-bottom: 195px;
+}
+@media (max-width: 768px) {
+  #news {
+    margin-bottom: 95px;
+  }
 }
 
 .news__title {
   position: relative;
-  margin-left: 100px;
+  margin-right: 20px;
   font-size: 2.25rem;
+  letter-spacing: 0.1rem;
 }
-
 .news__title::before {
   content: "News";
   display: block;
@@ -75,19 +111,25 @@ html {
   top: -2%;
   font-size: 0.87rem;
 }
+@media (max-width: 768px) {
+  .news__title {
+    font-size: 1.75rem;
+  }
+}
 
 .news__list {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   height: 16rem;
+  max-width: 100%;
   margin-top: 80px;
 }
 
 .news__list-item {
   position: relative;
-  padding: 0 30px;
+  padding: 0 2vw;
 }
-
 .news__list-item::before {
   content: "";
   display: block;
@@ -98,7 +140,6 @@ html {
   height: 110%;
   background-color: #000;
 }
-
 .news__list-item:last-child::after {
   content: "";
   display: block;
@@ -110,6 +151,223 @@ html {
   background-color: #000;
 }
 
+@media (max-width: 768px) {
+  .news__list-item:nth-of-type(3)::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: -5%;
+    width: 1px;
+    height: 110%;
+    background-color: #000;
+  }
+  .news__list-item:nth-of-type(n+4) {
+    display: none;
+  }
+}
 .news__list-item--time {
   font-size: 0.75rem;
+}
+
+.item__card {
+  display: flex;
+  height: auto;
+}
+
+.item__card--first {
+  flex-direction: row-reverse;
+  margin-bottom: 180px;
+}
+@media (max-width: 768px) {
+  .item__card--first {
+    margin-bottom: 100px;
+  }
+}
+
+.item__title {
+  writing-mode: vertical-rl;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+}
+@media (max-width: 768px) {
+  .item__title {
+    font-size: 1.5rem;
+  }
+}
+
+.item__title--first {
+  margin-left: 20px;
+}
+.item__title--first::after {
+  content: "Create New Values";
+  margin-top: 1rem;
+  font-size: 0.87rem;
+}
+@media (max-width: 768px) {
+  .item__title--first::after {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .item__title--first {
+    margin-left: 10px;
+  }
+}
+
+.item__title--second {
+  margin-right: 20px;
+}
+.item__title--second::after {
+  content: "Science & Technology";
+  margin-top: 1rem;
+  font-size: 0.87rem;
+}
+@media (max-width: 768px) {
+  .item__title--second::after {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .item__title--second {
+    margin-right: 10px;
+  }
+}
+
+.item__content {
+  position: relative;
+  width: 639px;
+  max-width: 100%;
+  height: 426px;
+  margin-top: 100px;
+  background-size: cover;
+  background-position: center;
+}
+@media (max-width: 768px) {
+  .item__content {
+    width: 301px;
+    height: 200px;
+  }
+}
+
+.item__content--first {
+  background-image: url(../img/products1.jpg);
+}
+
+.item__content--second {
+  background-image: url(../img/products2.jpg);
+}
+
+.item__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 358px;
+  height: 146px;
+  padding: 3rem 7rem;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .item__text {
+    width: 192px;
+    height: 100px;
+    padding: 32px;
+    font-size: 0.87rem;
+  }
+}
+
+.item__text--first {
+  bottom: -20px;
+  left: -20px;
+  background-color: rgba(249, 233, 6, 0.6);
+}
+
+.item__text--second {
+  bottom: -20px;
+  right: -20px;
+  background-color: rgba(149, 42, 38, 0.6);
+}
+
+#access {
+  width: 100%;
+  height: 450px;
+  max-height: 100vh;
+}
+
+.site-footer {
+  width: 100%;
+  padding: 80px 30px 30px;
+  background-color: #000;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .site-footer {
+    padding: 40px 20px 30px;
+  }
+}
+
+.site-footer__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  writing-mode: vertical-rl;
+  width: 100%;
+}
+
+.site-footer__logo {
+  flex: 1;
+  margin-right: 50px;
+}
+@media (max-width: 768px) {
+  .site-footer__logo {
+    margin-right: 0px;
+  }
+}
+
+.site-footer__info {
+  flex: 1;
+  font-size: 0.87rem;
+}
+.site-footer__text--addres {
+  margin-left: 14px;
+}
+.site-footer__text--addres span {
+  margin-top: 1em;
+}
+
+.site-footer__nav {
+  flex: 1;
+}
+.site-footer__nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+@media (max-width: 768px) {
+  .site-footer__nav ul {
+    gap: 10px;
+    font-size: 0.87rem;
+  }
+}
+
+.site-footer__links {
+  display: flex;
+  align-items: end;
+  flex: 7;
+  font-size: 0.87rem;
+}
+.site-footer__links span {
+  margin: 0.5em 0;
+}
+@media (max-width: 768px) {
+  .site-footer__links {
+    flex: 1;
+  }
+}
+
+.site-footer__copy {
+  width: 100%;
+  font-size: 0.62rem;
+  text-align: center;
 }/*# sourceMappingURL=stylesheet.css.map */
