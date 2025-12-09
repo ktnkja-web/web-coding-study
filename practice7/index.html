@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" href="img/favicon.ico" sizes="any">
+    <title>practice6</title>
+    <meta name="description" content="ホームページ作成練習サイトです">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="is-home">
+    <header class="header">
+        <h1 class="site-logo header__logo logo--home">
+            <a href="#"><img src="img/logo.svg" alt="WED"></a>
+        </h1>
+        <div class="site-logo header__logo logo--sub">
+            <a href="#"><img src="img/logo.svg" alt="WED"></a>
+        </div>
+        <nav class="header__nav">
+            <ul>
+                <li class="nav__item"><a href="#news">NEWS</a></li>
+                <li class="nav__item"><a href="#about">ABOUT</a></li>
+                <li class="nav__item"><a href="#business">BUSINESS</a></li>
+                <li class="nav__item"><a href="#company">COMPANY</a></li>
+            </ul>
+        </nav>
+        <div class="header__contact"><a href="">お問い合わせ</a></div>
+    </header>
+
+    <div class="mainvisual">
+        <img src="img/mainvisual.jpg" alt="">
+    </div>
+
+    <main class="main">
+        <section id="news" class="news wrapper">
+            <div class="section-header">
+                <h2 class="section-header__title section-header__title--news">NEWS</h2>
+                <p class="section-header__subtitle">ニュース</p>
+                <div class="section-header__line"></div>
+            </div>
+            <div class="news__items">
+                <article class="news__item">
+                    <div class="news__data">
+                        <time datetime="2021-01-01" class="news__data--time">2021.01.01</time>
+                        <span class="news__data--state">NEWS</span>
+                    </div>
+                    <p class="news__text">タイトルタイトルタイトルタイトル</p>
+                </article>
+                <article class="news__item">
+                    <div class="news__data">
+                        <time datetime="2021-01-01" class="news__data--time">2021.01.01</time>
+                        <span class="news__data--state">PRESS</span>
+                    </div>
+                    <p class="news__text">タイトルタイトルタイトルタイトル</p>
+                </article>
+                <article class="news__item">
+                    <div class="news__data">
+                        <time datetime="2021-01-01" class="news__data--time">2021.01.01</time>
+                        <span class="news__data--state">NEWS</span>
+                    </div>
+                    <p class="news__text">タイトルタイトルタイトルタイトル</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="about__image">
+                <img src="img/about.jpg" alt="">
+            </div>
+            <div class="about__container">
+                <div class="section-header section-header--about">
+                    <h2 class="section-header__title">ABOUT</h2>
+                    <p class="section-header__subtitle">私たちについて</p>
+                    <div class="section-header__line"></div>
+                </div>
+                <div class="about__texts">
+                    <p class="about__text">テキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキスト</p>
+                    <p class="about__text">テキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキスト</p>
+                    <p class="about__text">テキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキスト</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="business" class="business wrapper">
+            <div class="section-header section-header--business">
+                <h2 class="section-header__title">BUSINESS</h2>
+                <div class="section-header__line"></div>
+            </div>
+            <div class="business__container">
+                <div class="business__items business__items--column1">
+                    <div class="business__item business__item--1">
+                        <p class="business__item-title">Web制作・マーケティング</p>
+                        <img src="img/business1.jpg" alt="" class="business__item-image business__item-image--1">
+                    </div>
+                    <div class="business__item business__item--2">
+                        <p class="business__item-title">インターネットメディア事業</p>
+                        <img src="img/business2.jpg" alt="" class="business__item-image business__item-image--2">
+                    </div>
+                </div>
+                <div class="business__items business__items--column2">
+                    <div class="business__item business__item--3">
+                        <p class="business__item-title">プロモーション企画・制作</p>
+                        <img src="img/business3.jpg" alt="" class="business__item-image business__item-image--3">
+                    </div>
+                    <div class="business__item business__item--4">
+                        <p class="business__item-title">ソーシャル企画・運営</p>
+                        <img src="img/business4.jpg" alt="" class="business__item-image business__item-image--4">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="company" class="company wrapper">
+            <div class="company__container">
+                <div class="section-header section-header--company">
+                    <h2 class="section-header__title"></h2>
+                    <div class="section-header__line"></div>
+                </div>
+                <dl class="company__lists">
+                    <dt class="company__list-title">会社名</dt>
+                    <dd class="company__list-text">ウェブエンターテイメントデザイン株式会社</dd>
+                    <dt class="company__list-title">所在地</dt>
+                    <dd class="company__list-text">東京都渋谷区桜丘町99-9 West Building 3F</dd>
+                    <dt class="company__list-title">代表</dt>
+                    <dd class="company__list-text">ＸＸＸＸＸＸ</dd>
+                    <dt class="company__list-title">設立</dt>
+                    <dd class="company__list-text">2021年1月1日</dd>
+                    <dt class="company__list-title">資本金</dt>
+                    <dd class="company__list-text">3,000,000円</dd>
+                    <dt class="company__list-title">事業内容</dt>
+                    <dd class="company__list-text">Web制作・マーケティング</dd>
+                    <dd class="company__list-text">インターネットメディア事業</dd>
+                    <dd class="company__list-text">プロモーション企画・制作</dd>
+                    <dd class="company__list-text">ソーシャル企画・運営</dd>
+                </dl>
+            </div>
+            <img src="img/company.jpg" alt="" class="company__image">
+        </section>
+    </main>
+
+    <footer class="footer wrapper">
+        <div class="footer__contaner">
+            <div class="site-logo footer__logo">
+                <a href="#"><img src="img/logo.svg" alt=""></a>
+            </div>
+            <div class="footer__lists">
+                <ul>
+                    <li class="footer__list">Web Entertainment Design Inc. </li>
+                    <li class="footer__list">West Building 3F</li>
+                    <li class="footer__list">9-99 Sakuragaokacho Shibuya-ku</li>
+                    <li class="footer__list">Tokyo, Japan 150-0031</li>
+                    <li class="footer__list">T/99-9999-9999</li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer__copyright">&#64;Web Entertainment Design Inc.</p>
+    </footer>
+</body>
+
+</html>
