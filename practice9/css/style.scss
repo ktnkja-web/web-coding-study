@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+.header__drawer {
+    display: none;
+}
+
+.hero__visual {
+    position: relative;
+    height: 500px;
+}
+
+.hero__bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    animation: fadeBg 21s infinite;
+}
+
+.hero__bg--1 {
+    background-image: url(../img/mainvisual1.jpg);
+    animation-delay: 0s;
+}
+
+.hero__bg--2 {
+    background-image: url(../img/mainvisual2.jpg);
+    animation-delay: 7s;
+}
+
+.hero__bg--3 {
+    background-image: url(../img/mainvisual3.jpg);
+    animation-delay: 14s;
+}
+
+@keyframes fadeBg {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
