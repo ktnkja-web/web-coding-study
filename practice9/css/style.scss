@@ -16,21 +16,30 @@ html {
     font-size: 62.5%;
 }
 
+body.is-open {
+    overflow: hidden;
+}
+
 .wrapper {
     margin: 0 auto;
 }
 
-.header__inner {
-    display: flex;
-    justify-content: space-between;
-    padding: clamp(2.5rem, 5vw, 4rem) 0 0 clamp(2.5rem, 5vw, 4rem);
-    height: auto;
+.header {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: clamp(10rem, 10vh, 8rem);
+    background-color: #fff;
 }
 
-.header__logo {
+.header__inner {
+    padding: clamp(2.5rem, 5vw, 4rem) 0 0 clamp(2.5rem, 5vw, 4rem);
+    height: 100%;
+}
+
+.title-logo {
+    display: block;
     width: 10rem;
-    width: 10rem;
-    max-width: 100%;
     height: auto;
 
     img {
@@ -43,11 +52,11 @@ html {
 
 .header__menu-button {
     position: fixed;
+    z-index: 200;
     top: 0;
     right: 0;
     display: glid;
     place-items: center;
-    z-index: 100;
     width: clamp(7.5rem, 20vw, 10rem);
     aspect-ratio: 1 / 1;
     background-color: #FF2A2A;
@@ -77,8 +86,8 @@ html {
     transform: translateY(-8px) rotate(-45deg);
 }
 
-.header__drawer {
-    display: none;
+.main-wrapper {
+    padding-top: clamp(8rem, 14vh, 10rem);
 }
 
 .hero__visual {
@@ -143,4 +152,16 @@ html {
     100% {
         opacity: 0;
     }
+}
+
+
+.drawer {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    // width: 100vw;
+    // height: 100vh;
+    background-color: #FF2A2A;
+    color: #fff;
 }
