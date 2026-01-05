@@ -26,28 +26,28 @@
             </button>
         </div>
 
-         <div class="drawer">
-        <div class="title-logo drawer__logo">
-            <img src="img/logo-w.svg" alt="BBB英会話スクール">
+        <div class="drawer">
+            <div class="title-logo drawer__logo">
+                <img src="img/logo-w.svg" alt="BBB英会話スクール">
+            </div>
+            <nav class="drawer__nav">
+                <ul class="drawer__nav-list">
+                    <li class="drawer__nav-item">
+                        <a class="drawer__nav-link" href="">BBBが選ばれる理由</a>
+                    </li>
+                    <li class="drawer__nav-item">
+                        <a class="drawer__nav-link" href="">受講生の声</a>
+                    </li>
+                    <li class="drawer__nav-item">
+                        <a class="drawer__nav-link" href="">スクールの概要</a>
+                    </li>
+                </ul>
+            </nav>
+            <a class="drawer__cta">無料体験に申し込む</a>
         </div>
-        <nav class="drawer__nav">
-            <ul class="drawer__nav-list">
-                <li class="drawer__nav-item">
-                    <a class="drawer__nav-link" href="">BBBが選ばれる理由</a>
-                </li>
-                <li class="drawer__nav-item">
-                    <a class="drawer__nav-link" href="">受講生の声</a>
-                </li>
-                <li class="drawer__nav-item">
-                    <a class="drawer__nav-link" href="">スクールの概要</a>
-                </li>
-            </ul>
-        </nav>
-        <a class="drawer__cta">無料体験に申し込む</a>
-    </div>
     </header>
 
-   
+
 
     <main class="main-wrapper">
         <section class="hero">
@@ -202,7 +202,14 @@
     </footer>
 
     <script>
+        const menuButton = document.querySelector('.header__menu-button');
+        const drawer = document.querySelector('.drawer');
 
+        menuButton.addEventListener('click', () => {
+            menuButton.classList.toggle('is-open');
+            drawer.classList.toggle('is-open');
+            document.body.classList.toggle('no-scroll');
+        })
     </script>
 </body>
 

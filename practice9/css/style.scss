@@ -16,7 +16,7 @@ html {
     font-size: 62.5%;
 }
 
-body.is-open {
+body.no-scroll {
     overflow: hidden;
 }
 
@@ -55,7 +55,7 @@ body.is-open {
     z-index: 200;
     top: 0;
     right: 0;
-    display: glid;
+    display: grid;
     place-items: center;
     width: clamp(7.5rem, 20vw, 10rem);
     aspect-ratio: 1 / 1;
@@ -63,27 +63,38 @@ body.is-open {
     border: none;
     text-align: center;
     cursor: pointer;
+    --bar-offset: 11px;
+
+    @include pc(){
+    --bar-offset: 14px;
+    }
 }
 
 .header__menu-bar {
-    display: block;
+    position: absolute;
     background-color: #fff;
     width: 50%;
     height: 1px;
-    margin: clamp(11px, 1vw, 14px) 0;
     transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.header__menu-bar:nth-child(1) {
+    transform: translateY(calc(-1*var(--bar-offset)));
+}
+.header__menu-bar:nth-child(2) {
+    transform: translateY(0);
+}
+.header__menu-bar:nth-child(3) {
+    transform: translateY(var(--bar-offset));
 }
 
 .header__menu-button.is-open .header__menu-bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
+    transform: rotate(45deg);
 }
-
 .header__menu-button.is-open .header__menu-bar:nth-child(2) {
     opacity: 0;
 }
-
 .header__menu-button.is-open .header__menu-bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
+    transform: rotate(-45deg);
 }
 
 .main-wrapper {
@@ -160,8 +171,10 @@ body.is-open {
     position: fixed;
     inset: 0;
     z-index: 100;
-    // width: 100vw;
-    // height: 100vh;
     background-color: #FF2A2A;
     color: #fff;
+}
+
+.drawer.is-open{
+    display: block;
 }
