@@ -179,10 +179,14 @@ body.no-scroll {
 }
 
 .hero {
+    margin-bottom: 8rem;
+
     @include pc() {
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
+        margin-bottom: 12rem;
+
     }
 }
 
@@ -261,22 +265,50 @@ body.no-scroll {
 .hero__title {
     width: clamp(34rem, 50vw, 46rem);
     margin: 0 auto;
+    padding: 2rem 0;
     font-size: clamp(2.8rem, 5vw, 4.6rem);
     font-weight: bold;
-    line-height: 2;
+    line-height: 1.5;
     letter-spacing: 0.3rem;
     text-shadow: 0 4px 6px #fff;
+
+    @include pc() {
+        padding-bottom: 3rem;
+    }
 }
 
 .hero__cta {
+    position: relative;
     display: block;
-    padding: 1.5rem clamp(6.7rem, 10vw, 12.7rem);
+    padding: 1.5rem clamp(6rem, 10vw, 12rem);
     width: clamp(34rem, 50vw, 46rem);
     margin: 0 auto;
-    border-bottom: 3px solid #7A051C;
+    border-bottom: 7px solid #7A051C;
     border-radius: 10px;
     background-color: #FF2A2A;
     text-align: center;
     color: #fff;
     font-size: 2.4rem;
+    letter-spacing: 0.3rem;
+    transition: all 0.3s;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.9;
+        transform: scale(1.05);
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        right: 3rem;
+        top: 50%;
+        width: 1.3rem;
+        height: 1.3rem;
+        border-top: 3px solid #fff;
+        border-right: 3px solid #fff;
+        transform: translateY(-50%) rotate(45deg);
+
+    }
 }
