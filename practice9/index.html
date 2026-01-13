@@ -67,15 +67,15 @@
             </div>
 
             <div class="features__items">
-                <article class="features__item">
-                    <img class="features__icon" src="img/icon-pc.png" alt="オンライン対応のアイコン">
+                <article class="features__item features__item--online">
+                    <img class="features__icon features__icon--online" src="img/icon-pc.png" alt="オンライン対応のアイコン">
                     <div class="features__content">
                         <h3 class="features__title">オンライン対応</h3>
                         <p class="features__text">24時間いつでも受講できる！</p>
                     </div>
                 </article>
-                <article class="features__item">
-                    <img class="features__icon" src="img/icon-teacher.png" alt="教師のアイコン">
+                <article class="features__item features__item--teacher">
+                    <img class="features__icon features__icon--teacher" src="img/icon-teacher.png" alt="教師のアイコン">
                     <div class="features__content">
                         <h3 class="features__title">講師はネイティブ</h3>
                         <p class="features__text">お気に入りの講師が自由に選べる！</p>
@@ -241,6 +241,19 @@
             drawer.classList.remove('is-open');
             document.body.classList.remove('no-scroll');
         })
+
+        const targets = document.querySelectorAll('.features__item')
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('slide-in');
+                    observer.unobserve(entry.target);
+                }
+            });
+        });
+
+        targets.forEach(target => observer.observe(target));
     </script>
 </body>
 
