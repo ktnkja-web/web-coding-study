@@ -245,18 +245,31 @@
             document.body.classList.remove('no-scroll');
         })
 
-        const targets = document.querySelectorAll('.features__item')
+        const featuresItem = document.querySelectorAll('.features__item')
 
-        const observer = new IntersectionObserver((entries) => {
+        const featuresObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('slide-in');
-                    observer.unobserve(entry.target);
+                    featuresObserver.unobserve(entry.target);
                 }
             });
         });
 
-        targets.forEach(target => observer.observe(target));
+        featuresItem.forEach(target => featuresObserver.observe(target));
+
+        const reviewsItem = document.querySelectorAll('.reviews__item')
+
+        const reviewsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('slide-in');
+                    reviewsObserver.unobserve(entry.target);
+                }
+            });
+        });
+
+        reviewsItem.forEach(target => reviewsObserver.observe(target));
     </script>
 </body>
 
