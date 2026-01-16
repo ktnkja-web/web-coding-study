@@ -535,4 +535,79 @@ body.no-scroll {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.about {
+  padding: 6rem 0;
+  background-image: url(../img/bg.gif);
+  background-repeat: repeat;
+  background-size: 700px;
+  animation: bg-flow 20s linear infinite;
+}
+
+@keyframes bg-flow {
+  from {
+    background-position: 700px 0;
+  }
+  to {
+    background-position: 0 700px;
+  }
+}
+.about__items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+  max-width: 86rem;
+  margin: 0 auto;
+}
+@media (min-width: 900px) {
+  .about__items {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.about__item {
+  width: 90%;
+  padding: 3rem;
+  border-radius: 10px;
+  background-color: #fff;
+}
+@media (min-width: 900px) {
+  .about__item {
+    width: 45%;
+    max-width: 41rem;
+    padding: 6rem;
+  }
+}
+
+.about__title {
+  text-align: center;
+}
+
+.about__title-main {
+  display: block;
+  margin-bottom: 1.5rem;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 1;
+}
+@media (min-width: 900px) {
+  .about__title-main {
+    font-size: 2.8rem;
+  }
+}
+
+.about__title-sub {
+  display: block;
+  margin-bottom: 3rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.about__description {
+  font-size: 1.6rem;
 }/*# sourceMappingURL=style.css.map */
