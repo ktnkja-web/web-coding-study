@@ -610,4 +610,69 @@ body.no-scroll {
 
 .about__description {
   font-size: 1.6rem;
+}
+
+.cta {
+  padding: 8rem 0;
+}
+@media (min-width: 900px) {
+  .cta {
+    padding: 12rem 0;
+  }
+}
+
+.cta__content {
+  width: 90%;
+  margin: 0 auto;
+}
+@media (min-width: 900px) {
+  .cta__content {
+    width: 60%;
+  }
+}
+
+.cta__title {
+  margin-bottom: 0.5rem;
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-align: center;
+}
+@media (min-width: 900px) {
+  .cta__title {
+    font-size: 3.2rem;
+  }
+}
+
+.cta__message {
+  margin-bottom: 4rem;
+  font-size: 1.6rem;
+  text-align: center;
+}
+@media (min-width: 900px) {
+  .cta__message {
+    font-size: 1.8rem;
+  }
+}
+
+.cta__button {
+  display: block;
+  padding: 1.5rem 0;
+  background-color: #FF2A2A;
+  color: #fff;
+  border-radius: 40px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+@media (min-width: 900px) {
+  .cta__button {
+    font-size: 2.8rem;
+  }
+}
+.cta__button:hover {
+  background-color: #fff;
+  border: 3px solid #FF2A2A;
+  color: #FF2A2A;
 }/*# sourceMappingURL=style.css.map */
