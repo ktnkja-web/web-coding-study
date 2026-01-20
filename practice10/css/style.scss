@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+@mixin pc {
+    @media (min-width:900px) {
+        @content;
+    }
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    letter-spacing: 0.1rem;
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+.wrapper {
+    margin: 0 auto;
+}
