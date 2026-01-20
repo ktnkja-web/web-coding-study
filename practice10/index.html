@@ -13,7 +13,56 @@
 </head>
 
 <body>
-    
+    <header class="header">
+        <div class="header__container">
+            <h1 class="header__logo">
+                <a href="">
+                    <img src="./img/logo.svg" alt="sneakers">
+                </a>
+            </h1>
+            <button class="header__menu-toggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="drawer">
+                <span class="header__menu-bar"></span>
+                <span class="header__menu-bar"></span>
+                <span class="header__menu-bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <section id="drawer" class="drawer">
+        <div class="drawer__inner">
+            <nav class="drawer__nav">
+                <ul class="drawer__list">
+                    <li class="drawer__item"><a href="">PICK UP</a></li>
+                    <li class="drawer__item"><a href="">FEATURE</a></li>
+                    <li class="drawer__item"><a href="">CONTACT</a></li>
+                </ul>
+            </nav>
+
+            <ul class="drawer__social">
+                <li class="drawer__social-item"><a href="">Twitter</a></li>
+                <li class="drawer__social-item"><a href="">facebook</a></li>
+                <li class="drawer__social-item"><a href="">instagram</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="mainvisual"></section>
+    <section class="pickup"></section>
+    <section class="feature"></section>
+    <footer class="footer"></footer>
+
+    <script>
+        //         const toggle = document.querySelector('.header__menu-toggle');
+        // const drawer = document.getElementById('drawer');
+
+        // toggle.addEventListener('click', () => {
+        //   const isOpen = toggle.getAttribute('aria-expanded') === 'true';　　（getAttributeで返ってくるのは文字列なので=== 'true'が必要）
+
+        //   toggle.setAttribute('aria-expanded', String(!isOpen));
+        //   drawer.classList.toggle('is-open');
+        // });
+
+    </script>
 </body>
 
 </html>
