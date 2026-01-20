@@ -6,6 +6,8 @@
     }
 }
 
+$fz-md: 1.44rem;
+
 html {
     font-size: 62.5%;
 }
@@ -16,6 +18,11 @@ body {
 
 body.no-scroll {
     overflow: hidden;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
 }
 
 .header__container {
@@ -42,7 +49,7 @@ body.no-scroll {
 
 .header__menu-toggle {
     display: grid;
-    position: relative;
+    position: fixd;
     width: 3rem;
     height: 2.3rem;
     z-index: 200;
@@ -60,8 +67,8 @@ body.no-scroll {
 
 .header__menu-bar {
     position: absolute;
-    background-color: #000;
-    width: 100%;
+    background-color: #121212;
+    width: 3rem;
     height: 2px;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
@@ -88,4 +95,51 @@ body.no-scroll {
 
 .header__menu-button.is-open .header__menu-bar:nth-child(3) {
     transform: rotate(-45deg);
+}
+
+.drawer {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000cc;
+    z-index: 100;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.drawer.is-open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.drawer__inner {
+    width: 30rem;
+    height: 100vh;
+    padding: 6rem 2.5rem 0;
+    background-color: #000;
+    color: #fff;
+    font-size: $fz-md;
+}
+
+.drawer__nav {
+    width: 25rem;
+    margin-bottom: 6.5rem;
+}
+
+.drawer__item {
+    padding: 2rem 0;
+    border-top: 1px solid #fff;
+
+    &:last-child {
+        border-bottom: 1px solid #fff;
+    }
+}
+
+.drawer__social-item {
+    margin-bottom: 2rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
