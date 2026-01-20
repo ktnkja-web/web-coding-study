@@ -4,10 +4,80 @@ html {
 }
 
 body {
-  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
-  letter-spacing: 0.1rem;
+  font-family: "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
 }
 
 body.no-scroll {
   overflow: hidden;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.header__logo {
+  width: 100%;
+  max-width: 17.5rem;
+  height: auto;
+}
+.header__logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.header__menu-toggle {
+  display: grid;
+  position: relative;
+  width: 3rem;
+  height: 2.3rem;
+  z-index: 200;
+  place-items: center;
+  border: none;
+  background-color: transparent;
+  text-align: center;
+  cursor: pointer;
+  transition: opacity 0.5s ease;
+}
+.header__menu-toggle:hover {
+  opacity: 0.8;
+}
+
+.header__menu-bar {
+  position: absolute;
+  background-color: #000;
+  width: 100%;
+  height: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.header__menu-bar:nth-child(1) {
+  transform: translateY(-1.15rem);
+}
+
+.header__menu-bar:nth-child(2) {
+  transform: translateY(0);
+}
+
+.header__menu-bar:nth-child(3) {
+  transform: translateY(1.15rem);
+}
+
+.header__menu-button.is-open .header__menu-bar:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+.header__menu-button.is-open .header__menu-bar:nth-child(2) {
+  opacity: 0;
+}
+
+.header__menu-button.is-open .header__menu-bar:nth-child(3) {
+  transform: rotate(-45deg);
 }/*# sourceMappingURL=style.css.map */
