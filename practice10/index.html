@@ -20,32 +20,36 @@
                     <img src="./img/logo.svg" alt="sneakers">
                 </a>
             </h1>
-            
-            <button class="header__menu-toggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="drawer">
+
+            <button class="header__menu-toggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="header">
                 <span class="header__menu-bar"></span>
                 <span class="header__menu-bar"></span>
                 <span class="header__menu-bar"></span>
             </button>
         </div>
+
+        <div class="header__mask"></div>
+
+        <div id="header__menu" class="header__menu">
+            <div class="header__menu-inner">
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item"><a href="">PICK UP</a></li>
+                        <li class="header__nav-item"><a href="">FEATURE</a></li>
+                        <li class="header__nav-item"><a href="">CONTACT</a></li>
+                    </ul>
+                </nav>
+
+                <ul class="header__social">
+                    <li class="header__social-item"><a href="">Twitter</a></li>
+                    <li class="header__social-item"><a href="">facebook</a></li>
+                    <li class="header__social-item"><a href="">instagram</a></li>
+                </ul>
+            </div>
+        </div>
+
     </header>
 
-    <section id="drawer" class="drawer">
-        <div class="drawer__inner">
-            <nav class="drawer__nav">
-                <ul class="drawer__list">
-                    <li class="drawer__item"><a href="">PICK UP</a></li>
-                    <li class="drawer__item"><a href="">FEATURE</a></li>
-                    <li class="drawer__item"><a href="">CONTACT</a></li>
-                </ul>
-            </nav>
-
-            <ul class="drawer__social">
-                <li class="drawer__social-item"><a href="">Twitter</a></li>
-                <li class="drawer__social-item"><a href="">facebook</a></li>
-                <li class="drawer__social-item"><a href="">instagram</a></li>
-            </ul>
-        </div>
-    </section>
 
     <section class="mainvisual"></section>
     <section class="pickup"></section>
@@ -54,13 +58,13 @@
 
     <script>
         //         const toggle = document.querySelector('.header__menu-toggle');
-        // const drawer = document.getElementById('drawer');
+        // const header = document.getElementById('header');
 
         // toggle.addEventListener('click', () => {
         //   const isOpen = toggle.getAttribute('aria-expanded') === 'true';　　（getAttributeで返ってくるのは文字列なので=== 'true'が必要）
 
         //   toggle.setAttribute('aria-expanded', String(!isOpen));
-        //   drawer.classList.toggle('is-open');
+        //   header.classList.toggle('is-open');
         // });
 
     </script>
