@@ -14,6 +14,8 @@ body.no-scroll {
 .header {
   position: fixed;
   width: 100%;
+  background-color: #fff;
+  z-index: 100;
 }
 
 .header__container {
@@ -43,7 +45,7 @@ body.no-scroll {
   position: relative;
   width: 3rem;
   height: 2.3rem;
-  z-index: 200;
+  z-index: 400;
   place-items: center;
   border: none;
   background-color: transparent;
@@ -96,7 +98,7 @@ body.no-scroll {
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.8);
-  z-index: 100;
+  z-index: 200;
   opacity: 0;
 }
 
@@ -114,7 +116,7 @@ body.no-scroll {
   background-color: #000;
   color: #fff;
   font-size: 1.44rem;
-  z-index: 100;
+  z-index: 300;
   opacity: 0;
   pointer-events: none;
   transform: translateX(-100%);
@@ -145,4 +147,17 @@ body.no-scroll {
 }
 .header__social-item:last-child {
   margin-bottom: 0;
+}
+
+.mainvisual {
+  width: 100%;
+  padding-top: 8rem;
+}
+
+.mainvisual video {
+  width: 100%;
+  height: calc(100vh - 8rem);
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
 }/*# sourceMappingURL=style.css.map */

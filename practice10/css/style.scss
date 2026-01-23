@@ -6,6 +6,11 @@
     }
 }
 
+$zi-header: 100;
+$zi-mask: 200;
+$zi-menu: 300;
+$zi-toggle: 400;
+
 $fz-md: 1.44rem;
 
 html {
@@ -23,6 +28,8 @@ body.no-scroll {
 .header {
     position: fixed;
     width: 100%;
+    background-color: #fff;
+    z-index: $zi-header;
 }
 
 .header__container {
@@ -52,7 +59,7 @@ body.no-scroll {
     position: relative;
     width: 3rem;
     height: 2.3rem;
-    z-index: 200;
+    z-index: $zi-toggle;
     place-items: center;
     border: none;
     background-color: transparent;
@@ -107,7 +114,7 @@ body.no-scroll {
     width: 100vw;
     height: 100vh;
     background-color: #000000cc;
-    z-index: 100;
+    z-index: $zi-mask;
     opacity: 0;
 }
 
@@ -125,7 +132,7 @@ body.no-scroll {
     background-color: #000;
     color: #fff;
     font-size: $fz-md;
-    z-index: 100;
+    z-index: $zi-menu;
     opacity: 0;
     pointer-events: none;
     transform: translateX(-100%);
@@ -158,4 +165,16 @@ body.no-scroll {
     &:last-child {
         margin-bottom: 0;
     }
+}
+
+.mainvisual {
+    width: 100%;
+    padding-top: 8rem;
+}
+
+.mainvisual video {
+    width: 100%;
+    height: calc(100vh - 8rem);
+    object-fit: cover;
+    display: block;
 }
