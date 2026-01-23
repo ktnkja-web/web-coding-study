@@ -30,7 +30,7 @@
 
         <div class="header__mask"></div>
 
-        <div id="header__menu" class="header__menu">
+        <div class="header__menu">
             <div class="header__menu-inner">
                 <nav class="header__nav">
                     <ul class="header__nav-list">
@@ -57,15 +57,20 @@
     <footer class="footer"></footer>
 
     <script>
-        //         const toggle = document.querySelector('.header__menu-toggle');
-        // const header = document.getElementById('header');
+        const menuToggle = document.querySelector('.header__menu-toggle');
+        const mask = document.querySelector('.header__mask');
+        const headerMenu = document.querySelector('.header__menu');
 
-        // toggle.addEventListener('click', () => {
-        //   const isOpen = toggle.getAttribute('aria-expanded') === 'true';　　（getAttributeで返ってくるのは文字列なので=== 'true'が必要）
+        menuToggle.addEventListener('click', () => {
+            const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
+            // （getAttributeで返ってくるのは文字列なので === 'true'が必要）
 
-        //   toggle.setAttribute('aria-expanded', String(!isOpen));
-        //   header.classList.toggle('is-open');
-        // });
+            menuToggle.setAttribute('aria-expanded', String(!isOpen));
+            menuToggle.classList.toggle('is-open');
+            mask.classList.toggle('is-open');
+            headerMenu.classList.toggle('is-open');
+            body.classList.toggle('no-scroll');
+        });
 
     </script>
 </body>
