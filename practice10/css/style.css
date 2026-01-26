@@ -98,8 +98,9 @@ body.no-scroll {
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.8);
-  z-index: 200;
   opacity: 0;
+  z-index: 200;
+  pointer-events: none;
 }
 
 .header__mask.is-open {
@@ -152,6 +153,12 @@ body.no-scroll {
 .mainvisual {
   width: 100%;
   padding-top: 8rem;
+  margin-bottom: 8rem;
+}
+@media (min-width: 900px) {
+  .mainvisual {
+    margin-bottom: 10rem;
+  }
 }
 
 .mainvisual video {
@@ -160,4 +167,45 @@ body.no-scroll {
   -o-object-fit: cover;
      object-fit: cover;
   display: block;
+}
+
+.pickup {
+  height: 100vh;
+  margin-bottom: 10rem;
+}
+
+.section-title {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2.4rem;
+}
+@media (min-width: 900px) {
+  .section-title {
+    margin-bottom: 3rem;
+    font-size: 3.6rem;
+  }
+}
+
+.swiper {
+  width: 100vw;
+  height: auto;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.swiper-wrapper {
+  height: auto;
+}
+
+.swiper-slide {
+  width: 100%;
+  min-width: 23.5rem;
+  height: auto;
+}
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=style.css.map */

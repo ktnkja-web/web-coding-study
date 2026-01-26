@@ -9,6 +9,7 @@
     <title>LP｜practice10</title>
     <meta name="description" content="これは練習で作成したWEBページです。今回はグリッドレイアウト、カルーセルスライダー、動画の埋め込みの実装練習です。">
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -56,11 +57,31 @@
             </video>
         </section>
 
-        <section class="pickup"></section>
+        <section class="pickup">
+            <h2 class="section-title">PICK UP</h2>
+
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="./img/pickup1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/pickup2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/pickup3.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/pickup4.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/pickup5.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/pickup6.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/pickup7.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/pickup8.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/pickup9.jpg" alt=""></div>
+                </div>
+            </div>
+        </section>
+
         <section class="feature"></section>
     </main>
     <footer class="footer"></footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script>
         const menuToggle = document.querySelector('.header__menu-toggle');
         const mask = document.querySelector('.header__mask');
@@ -75,6 +96,23 @@
             mask.classList.toggle('is-open');
             headerMenu.classList.toggle('is-open');
             body.classList.toggle('no-scroll');
+        });
+
+
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            centeredSlides: true,
+
+            spaceBetween: 40,
+            slidesPerView: 1.5,
+            breakpoints: {
+                900: {
+                    slidesPerView: 3.5,
+                    spaceBetween: 60
+                }
+            }
         });
 
     </script>

@@ -11,7 +11,8 @@ $zi-mask: 200;
 $zi-menu: 300;
 $zi-toggle: 400;
 
-$fz-md: 1.44rem;
+$fz-base: 1.44rem;
+$fz-lg: 2.4rem;
 
 html {
     font-size: 62.5%;
@@ -114,8 +115,9 @@ body.no-scroll {
     width: 100vw;
     height: 100vh;
     background-color: #000000cc;
-    z-index: $zi-mask;
     opacity: 0;
+    z-index: $zi-mask;
+    pointer-events: none;
 }
 
 .header__mask.is-open {
@@ -131,7 +133,7 @@ body.no-scroll {
     padding: 6rem 2.5rem 0;
     background-color: #000;
     color: #fff;
-    font-size: $fz-md;
+    font-size: $fz-base;
     z-index: $zi-menu;
     opacity: 0;
     pointer-events: none;
@@ -170,6 +172,11 @@ body.no-scroll {
 .mainvisual {
     width: 100%;
     padding-top: 8rem;
+    margin-bottom: 8rem;
+
+    @include pc() {
+        margin-bottom: 10rem;
+    }
 }
 
 .mainvisual video {
@@ -177,4 +184,44 @@ body.no-scroll {
     height: calc(100vh - 8rem);
     object-fit: cover;
     display: block;
+}
+
+.pickup {
+    height: 100vh;
+    margin-bottom: 10rem;
+}
+
+.section-title {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: $fz-lg;
+
+    @include pc() {
+        margin-bottom: 3rem;
+        font-size: $fz-lg*1.5;
+    }
+}
+
+.swiper {
+    width: 100vw;
+    height: auto;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.swiper-wrapper {
+    height: auto;
+}
+
+.swiper-slide {
+    width: 100%;
+    min-width: 23.5rem;
+    height: auto;
+
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+    }
 }
