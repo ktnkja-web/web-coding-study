@@ -242,6 +242,9 @@ body.no-scroll {
 .feature__img {
   width: 100%;
   height: auto;
+  opacity: 0;
+  transform: translateY(20%);
+  transition: opacity 0.9s ease, transform 0.8s ease;
 }
 .feature__img img {
   width: 100%;
@@ -249,6 +252,10 @@ body.no-scroll {
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.feature__img.is-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .features__content {

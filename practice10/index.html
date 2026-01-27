@@ -211,6 +211,19 @@
             }
         });
 
+        const featuresImg = document.querySelectorAll('.feature__img')
+
+        const featuresObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    featuresObserver.unobserve(entry.target);
+                }
+            });
+        });
+
+        featuresImg.forEach(target => featuresObserver.observe(target));
+
     </script>
 </body>
 
