@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 @mixin pc {
-    @media (min-width:900px) {
+    @media (min-width:1280px) {
         @content;
     }
 }
@@ -11,6 +11,7 @@ $zi-mask: 200;
 $zi-menu: 300;
 $zi-toggle: 400;
 
+$fz-sm: 1.2rem;
 $fz-base: 1.44rem;
 $fz-lg: 2.4rem;
 
@@ -112,7 +113,7 @@ body.no-scroll {
 .header__mask {
     position: fixed;
     inset: 0;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-color: #000000cc;
     opacity: 0;
@@ -202,7 +203,7 @@ body.no-scroll {
 }
 
 .swiper {
-    width: 100vw;
+    width: 100%;
     height: auto;
     overflow: hidden;
     z-index: 10;
@@ -223,4 +224,69 @@ body.no-scroll {
         display: block;
         object-fit: cover;
     }
+}
+
+.feature {
+    width: 100%;
+    margin-bottom: 9rem;
+
+    @include pc() {
+        margin-bottom: 6rem;
+    }
+}
+
+
+.feature__wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(34.3rem, 1fr));
+    justify-content: center;
+    gap: 2.6rem;
+    width: 96%;
+    margin: 0 auto;
+
+    @include pc() {
+        grid-template-columns: repeat(auto-fit, minmax(38.5rem, 1fr));
+        width: 85%;
+    }
+}
+
+.feature__item {
+    height: auto;
+    box-shadow: 0 0 8px 6px #00000025;
+}
+
+.feature__img {
+    width: 100%;
+    height: auto;
+
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+    }
+}
+
+.features__content {
+    padding: 1.4rem;
+
+    @include pc() {
+        padding: 3rem;
+    }
+}
+
+.feature__category {
+    font-size: $fz-sm;
+}
+
+.feature__introduction {
+    margin: 1.6rem 0;
+    font-size: $fz-base;
+    font-weight: bold;
+}
+
+.feature__time {
+    display: block;
+    font-size: $fz-sm;
+    text-align: right;
 }
