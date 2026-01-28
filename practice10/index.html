@@ -35,9 +35,9 @@
             <div class="header__menu-inner">
                 <nav class="header__nav">
                     <ul class="header__nav-list">
-                        <li class="header__nav-item"><a href="">PICK UP</a></li>
-                        <li class="header__nav-item"><a href="">FEATURE</a></li>
-                        <li class="header__nav-item"><a href="">CONTACT</a></li>
+                        <li class="header__nav-item"><a href="#pickup">PICK UP</a></li>
+                        <li class="header__nav-item"><a href="#feature">FEATURE</a></li>
+                        <li class="header__nav-item"><a href="#contact">CONTACT</a></li>
                     </ul>
                 </nav>
 
@@ -57,7 +57,7 @@
             </video>
         </section>
 
-        <section class="pickup">
+        <section id="pickup" class="pickup">
             <h2 class="section-title">PICK UP</h2>
 
             <div class="swiper">
@@ -77,7 +77,7 @@
             </div>
         </section>
 
-        <section class="feature">
+        <section id="feature" class="feature">
             <h2 class="section-title">FEATURE</h2>
 
             <div class="feature__wrapper">
@@ -175,26 +175,32 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <footer id="contact" class="footer">
+        <h2 class="section-title">CONTACT</h2>
+
         <div class="footer__container">
             <div class="footer__info">
-                <p class="footer__text"></p>
-                <p class="footer__text"></p>
-                <p class="footer__text"></p>
+                <p class="footer__text">テキストテキストテキスト</p>
+                <p class="footer__text">
+                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                </p>
+                <p class="footer__text">
+                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                </p>
             </div>
 
             <form class="footer__form">
-                 <div class="footer__field">
-                    <label class="footer__label" for=""></label>
-                    <input class="footer__input" type="text">
+                <div class="footer__field">
+                    <label class="footer__label" for="">Name:</label>
+                    <input class="footer__input input-sm" type="text">
                 </div>
-                 <div class="footer__field">
-                    <label class="footer__label" for=""></label>
-                    <input class="footer__input" type="text">
+                <div class="footer__field">
+                    <label class="footer__label" for="">Mail:</label>
+                    <input class="footer__input input-sm" type="text">
                 </div>
-                 <div class="footer__field">
-                    <label class="footer__label" for=""></label>
-                    <input class="footer__input" type="text">
+                <div class="footer__field">
+                    <label class="footer__label" for="">Message:</label>
+                    <input class="footer__input input-lg" type="text">
                 </div>
                 <button class="footer__button" type="submit">SEND</button>
             </form>
@@ -205,30 +211,53 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script>
+        // ナビゲーションメニューの開閉状態を切り替える関数
         const menuToggle = document.querySelector('.header__menu-toggle');
         const mask = document.querySelector('.header__mask');
         const headerMenu = document.querySelector('.header__menu');
+        const navLinks = document.querySelectorAll('.header__nav-item a');
+        const body = document.body;
 
-        menuToggle.addEventListener('click', () => {
+        const toggleMenu = () => {
+            // 現在のメニューが開いているかどうかを取得
             const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
             // （getAttributeで返ってくるのは文字列なので === 'true'が必要）
+            const nextState = !isOpen;
 
-            menuToggle.setAttribute('aria-expanded', String(!isOpen));
+            // アクセシビリティ属性（aria-expanded）を更新
+            menuToggle.setAttribute('aria-expanded', String(nextState));
+
             menuToggle.classList.toggle('is-open');
             mask.classList.toggle('is-open');
             headerMenu.classList.toggle('is-open');
-            body.classList.toggle('no-scroll');
+            body.classList.toggle('no-scroll');// 背景スクロール固定の切り替え
+        };
+
+        // ハンバーガーボタンをクリックした時に実行
+        menuToggle.addEventListener('click', toggleMenu);
+
+        // マスク部分をクリックした時に実行
+        mask.addEventListener('click', toggleMenu);
+
+        // ナビゲーション内の各リンクをクリックした時に実行
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                // メニューが開いている場合のみ閉じる
+                if (menuToggle.classList.contains('is-open')) {
+                    toggleMenu();
+                }
+            });
         });
 
-
+        // カルーセルスライダーの初期化
         const swiper = new Swiper('.swiper', {
-            // Optional parameters
             direction: 'horizontal',
             loop: true,
             centeredSlides: true,
 
             spaceBetween: 40,
             slidesPerView: 1.5,
+
             breakpoints: {
                 900: {
                     slidesPerView: 3.5,
@@ -237,6 +266,7 @@
             }
         });
 
+        // Intersection Observer APIを使ったフェードインアニメーションの実装
         const featuresImg = document.querySelectorAll('.feature__img')
 
         const featuresObserver = new IntersectionObserver((entries) => {

@@ -17,6 +17,7 @@ $fz-lg: 2.4rem;
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -25,6 +26,10 @@ body {
 
 body.no-scroll {
     overflow: hidden;
+}
+
+section {
+    scroll-margin-top: 8rem;
 }
 
 .header {
@@ -123,6 +128,7 @@ body.no-scroll {
 
 .header__mask.is-open {
     opacity: 1;
+    pointer-events: auto;
 }
 
 .header__menu {
@@ -298,4 +304,94 @@ body.no-scroll {
     display: block;
     font-size: $fz-sm;
     text-align: right;
+}
+
+.footer {
+    padding-top: 8rem;
+    background-color: #121212;
+    color: #fff;
+
+    @include pc() {
+        padding-top: 5rem;
+    }
+}
+
+.footer__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(34.3rem, 1fr));
+    justify-content: center;
+    justify-items: center;
+    gap: 3rem;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 0 8rem;
+
+    @include pc() {
+        gap: 14rem;
+        width: 85%;
+        padding: 3rem 0 5rem;
+    }
+}
+
+.footer__info {
+    max-width: 53rem;
+    width: 100%;
+
+}
+
+.footer__text {
+    font-size: $fz-base;
+    margin-bottom: 3rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.footer__form {
+    max-width: 55rem;
+    width: 100%;
+}
+
+.footer__field {
+    margin-bottom: 2rem;
+
+}
+
+
+.footer__label {
+    font-size: $fz-base;
+
+}
+
+.footer__input {
+    width: 100%;
+    background-color: #fff;
+}
+
+.input-sm {
+    height: 4.4rem;
+}
+
+.input-lg {
+    height: 6.8rem;
+}
+
+.footer__button {
+    width: 100%;
+    border: 1px solid #fff;
+    background-color: transparent;
+    height: 4.9rem;
+    color: #fff;
+    font-size: $fz-base;
+    cursor: pointer;
+
+    @include pc() {
+        max-width: 20rem;
+    }
+}
+
+.footer__copy {
+    text-align: center;
+    padding: 1rem 0;
 }
