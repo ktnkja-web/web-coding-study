@@ -1,0 +1,25 @@
+:root {
+  --media-pc: 1280px;
+
+  --zi-header: 100;
+  --zi-mask: 200;
+  --zi-menu: 300;
+  --zi-toggle: 400;
+
+  --fz-sm: 1.2rem;
+  --fz-base: 1.44rem;
+  --fz-lg: 2.4rem;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}

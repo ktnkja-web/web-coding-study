@@ -1,0 +1,16 @@
+.mainvisual {
+    width: 100%;
+    padding-top: 8rem;
+    margin-bottom: 8rem;
+
+    @media (min-width: var(--media-pc)) {
+        margin-bottom: 10rem;
+    }
+}
+
+.mainvisual video {
+    width: 100%;
+    height: calc(100vh - 8rem);
+    object-fit: cover;
+    display: block;
+}
