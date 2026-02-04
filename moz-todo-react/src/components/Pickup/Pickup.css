@@ -1,0 +1,27 @@
+.pickup {
+    margin-bottom: 10rem;
+}
+
+.swiper {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.swiper-wrapper {
+    height: auto;
+}
+
+.swiper-slide {
+    width: 100%;
+    min-width: 23.5rem;
+    height: auto;
+
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+    }
+}

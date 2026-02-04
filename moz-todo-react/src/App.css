@@ -1,3 +1,14 @@
 section {
   scroll-margin-top: 8rem;
 }
+
+.section-title {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: var(--fz-lg);
+
+  @media (min-width: 1280px) {
+    margin-bottom: 3rem;
+    font-size: calc(var(--fz-lg) * 1.5);
+  }
+}
