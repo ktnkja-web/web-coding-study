@@ -9,8 +9,9 @@ interface FeatureItemProps {
     date: string;
 }
 
-const FeatureItem: React.FC<FeatureItemProps> = ({ imgSrc, category, introduction, date }) => {
-    const [ref, isVisible] = useIntersectionObserver({ threshold: 0.1 });
+const observerOptions = { threshold: 0.1 };
+const FeatureItem = ({ imgSrc, category, introduction, date }: FeatureItemProps) => {
+    const [ref, isVisible] = useIntersectionObserver<HTMLDivElement>(observerOptions);
 
     return (
         <div ref={ref} className="feature__item">
