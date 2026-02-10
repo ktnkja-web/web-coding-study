@@ -1,35 +1,30 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+
+// 1. 各ページのコンポーネント（本来は別ファイルに分けますが、まずは同じファイルでOK）
+const Home = () => <h2>ここはホームです</h2>;
+const About = () => <h2>ここは会社概要ページです</h2>;
+const Contact = () => <h2>お問い合わせはこちら</h2>;
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <BrowserRouter>
+      {/* 2. 全ページ共通のナビゲーション */}
+      <nav style={{ padding: '10px', borderBottom: '1px solid #ccc' }}>
+        <Link style={{ margin: '10px' }} to="/">ホーム</Link>
+        <Link style={{ margin: '10px' }} to="/about">About</Link>
+        <Link style={{ margin: '10px' }} to="/contact">Contact</Link>
+      </nav>
+
+      {/* 3. URLに応じて中身が切り替わるエリア */}
+      <div style={{ padding: '20px' }}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
