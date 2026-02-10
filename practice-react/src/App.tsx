@@ -1,8 +1,11 @@
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import Home from './pages/Home';
 
 // 1. 各ページのコンポーネント（本来は別ファイルに分けますが、まずは同じファイルでOK）
-const Home = () => <h2>ここはホームです</h2>;
-const About = () => <h2>ここは会社概要ページです</h2>;
+
+const About = () => <h1 className="text-5xl font-bold text-red-500">
+  これで見えたら成功！
+</h1>;
 const Contact = () => <h2>お問い合わせはこちら</h2>;
 
 function App() {
